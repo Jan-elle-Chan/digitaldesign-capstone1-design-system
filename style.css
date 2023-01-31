@@ -1,17 +1,33 @@
 
+  /*Sidebar navigation css 
+  https://blog.hubspot.com/website/css-sidebar
+  https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_sidenav_fixed2*/
+  
 
-.sidenav {
-    width: 130px;
-    position: fixed;
-    z-index: 1;
-    top: 20px;
-    left: 10px;
-    background: #eee;
-    overflow-x: hidden;
-    padding: 8px 0;
-  }
-  /*Sidebar navigation css <--https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_sidenav_fixed2-->*/
-
-  .sidenav a {
+  .sidebar a {
+    padding:8px;
+    font-size: 24px;
     display: block;
   }
+
+  .sidebar {
+    height: 100%;
+    width: 150px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding-top: 40px;
+    background-color: lightblue;
+    }
+    
+.heading-card{
+  background-color: grey;
+  height:10%;
+  padding: 10px;
+  margin:auto;
+}
+    .heading-text{
+      margin-left: 150px;
+
+    }
+   
