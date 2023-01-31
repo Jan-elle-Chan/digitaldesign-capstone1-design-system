@@ -2,32 +2,43 @@
   /*Sidebar navigation css 
   https://blog.hubspot.com/website/css-sidebar
   https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_sidenav_fixed2*/
-  
+  header{
+    background: grey;
+    height: 15vh;
+  }
 
-  .sidebar a {
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    margin: 0;
+  }
+  .main {
+    display: flex;
+    flex: 1;
+  }
+  .main article {
+    flex: 1;
+    order: 2;
+  }
+  
+  .main nav {
+    flex: 0 0 10%;
+    background: lightgrey;
+    order: 1;
+  }
+  
+  .sidenav a {
     padding:8px;
-    font-size: 24px;
     display: block;
   }
 
-  .sidebar {
-    height: 100%;
-    width: 150px;
-    position: fixed;
-    left: 0;
-    top: 0;
-    padding-top: 40px;
-    background-color: lightblue;
-    }
+  
     
-.heading-card{
-  background-color: grey;
-  height:10%;
-  padding: 10px;
-  margin:auto;
-}
-    .heading-text{
-      margin-left: 150px;
-
+    footer{
+      background: grey;
+      height: 5vh;
     }
-   
+    header, footer, article, nav{
+      padding: 1em;
+    }
