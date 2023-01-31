@@ -6,6 +6,7 @@
   https://www.quackit.com/html/html_editors/scratchpad/?example=/css/flexbox/examples/flexbox_website_layout_1
   */
 
+  
   header{
     background: grey;
     height: 15vh;
@@ -16,11 +17,14 @@
     min-height: 100vh;
     flex-direction: column;
     margin: 0;
+    font-family: "Lato", sans-serif;
   }
+
   .main {
     display: flex;
     flex: 1;
   }
+
   .main article {
     flex: 1;
     order: 2;
@@ -31,29 +35,34 @@
     background: lightgrey;
     order: 1;
   }
-  
-  .sidenav a {
-    padding:8px;
-    display: block;
-  }
 
-  .dropdown-btn {
+
+  /*Dropdown button https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_sidenav_dropdown*/
+  .sidenav a, .dropdown-btn {
     padding: 6px 8px 6px 16px;
     text-decoration: none;
-    font-size: 20px;
-    color: #818181;
     display: block;
     border: none;
+    font:20px;
     background: none;
     width: 100%;
     text-align: left;
     cursor: pointer;
     outline: none;
   }
+
+  .sidenav a:hover, .dropdown-btn:hover {
+    color: #f1f1f1;
+  }
+  .active {
+    background-color: green;
+    color: white;
+  }
+  
   .dropdown-container {
     display: none;
-    background-color: #262626;
-    padding-left: 8px;
+    background-color: lightgrey;
+    padding: 6px 8px 6px 16px;
   }
   
     

@@ -11,13 +11,13 @@
   <main class="main">
     <nav class="sidenav">
       <a>Home</a>
-      <button class="dropdown-btn">Style</button>
-      <div class="dropdown-container">
-        <a href="#">Typography</a>
-        <a href="#">Colour</a>
-        <a href="#">Spacing</a>
-        <a href="#">Images</a>
-      </div>
+      <button class="dropdown-btn sidenav">Style</button>
+        <div class="dropdown-container">
+          <a href="#">Typography</a>
+          <a href="#">Colour</a>
+          <a href="#">Spacing</a>
+          <a href="#">Images</a>
+        </div>
       <a>Navigation</a>
       </nav>
       <article>
@@ -30,7 +30,8 @@
     </main>
     <footer>Footer</footer>
     <script>
-      /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+      /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict 
+      Source for javascript dropdown menu buttons Dropdown button https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_sidenav_dropdown*/
       var dropdown = document.getElementsByClassName("dropdown-btn");
       var i;
       
