@@ -1,122 +1,139 @@
-
-  /*Sidebar navigation css 
+/*Sidebar navigation css 
   https://blog.hubspot.com/website/css-sidebar
 
   Sidebar navigaton, footer, banner and flexbox for page structure
   https://www.quackit.com/html/html_editors/scratchpad/?example=/css/flexbox/examples/flexbox_website_layout_1
   */
 
-  
-  header{
-    background: grey;
-    height: 15vh;
-  }
-
-  footer img{
-    float:left;
-    overflow: auto;
-    margin: 0;
-    padding: 20;
-  height: 75px;;
-width:auto;
+html {
+  font-size: 62.5%;
 }
 
-header h1{
+header {
+  background: grey;
+  height: 15vh;
+}
+
+footer img {
+  float: left;
+  overflow: auto;
+  margin: 0;
+  padding: 20;
+  height: 75px;
+  width: auto;
+}
+
+.sample img {
+  float: right;
+  overflow: auto;
+  margin: 0;
+  padding: 20;
+  height: auto;
+  width: 100px;
+}
+
+header h1 {
   text-align: center;
   font-size: 50px;
 }
 
-  body {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-    margin: 0;
-    font-family: "Lato", sans-serif;
-  }
-
- .horizontal-flex-container{
-    display:flex;
-    flex-direction: row;
-  }
 
 
-  .vertical-flex-container{
-    display:flex;
-    flex-direction: column;
-  }
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  margin: 0;
+  font-family: "Helveltica", sans-serif;
+  font-size: 2.5rem;
+  line-height: 3.5rem;
+  color: black;
+}
 
-  .card{
-background-color: bisque;
-border-radius: 5px;
-padding: 10px;
-margin:10px;
-  }
+.horizontal-flex-container {
+  display: flex;
+  flex-direction: row;
+}
 
-  .elementcode-card{
-    width: calc(75% - 30px);
-      }
-      .elementimage-card{
-        width: calc(25% - 30px);
-          }
-      
+.vertical-flex-container {
+  display: flex;
+  flex-direction: column;
+}
 
-  .main {
-    display: flex;
-    flex: 1;
-  }
+.card {
+  background-color: white;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 10px;
+}
 
-  .main article {
-    flex: 1;
-    order: 2;
-  }
-  
-  .main nav {
-    flex: 0 0 10%;
-    background: lightgrey;
-    order: 1;
-    overflow-x: hidden;
-  }
+.elementcode-card {
+  width: calc(75% - 30px);
+  padding: 20px;
+}
+.elementimage-card {
+  width: calc(25% - 30px);
+}
 
+.main {
+  display: flex;
+  flex: 1;
+}
 
+.main article {
+  flex: 1;
+  order: 2;
+}
 
-  /*Dropdown button https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_sidenav_dropdown*/
-   .sidenav a, .dropdown-btn{
-    padding: 6px 8px 6px 16px;
-    text-decoration: none;
-    display: block;
-    border: none;
-    font-size:20px;
-    color: black;
-    background: none;
-    width: 100%;
-    text-align:left; 
-    cursor: pointer;
-    outline: none;
-  }
+.main nav {
+  flex: 0 0 10%;
+  background: lightgrey;
+  order: 1;
+  overflow-x: hidden;
+}
 
-  .dropdown-container a{
-    color: black;
-  }
+/*Dropdown button https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_sidenav_dropdown*/
+.sidenav a,
+.dropdown-btn {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  display: block;
+  border: none;
+  font-size: 20px;
+  color: black;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
 
-  .sidenav a:hover, .dropdown-btn:hover {
-    color: white;
-  }
-  .active {
-    background-color: green;
-    color: white;
-  }
-  
-  .dropdown-container {
-    display: none;
-    background-color: lightgrey;
-    padding: 6px 8px 6px 16px;
-  }
-  
-    
-    footer{
-      background: grey;
-      height: 10vh;
-    }
-    header, footer, article, nav{
-      padding: 1em;
-    }
+.dropdown-container a {
+  color: black;
+}
+
+.sidenav a:hover,
+.dropdown-btn:hover {
+  color: white;
+}
+.active {
+  background-color: green;
+  color: white;
+}
+
+.dropdown-container {
+  display: none;
+  background-color: lightgrey;
+  padding: 6px 8px 6px 16px;
+}
+
+footer {
+  background: grey;
+  height: 10vh;
+}
+header,
+footer,
+article,
+nav {
+  padding: 1em;
+}
