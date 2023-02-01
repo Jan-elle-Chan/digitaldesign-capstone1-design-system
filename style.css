@@ -150,6 +150,8 @@ th, td {
   height: 35px;
   width: 105px;
   border-radius: 25%;
+  border: 1px solid black;
+  text-align: left;
   display: inline-block;
 }
 
@@ -160,6 +162,9 @@ th, td {
   background-color: rgb(237, 232, 139);
 }
 
+body-bgcolor{
+  background-color: white;
+}
 .cards-bgcolor{
   background-color: rgb(194, 192, 171);
 }
