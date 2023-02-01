@@ -34,21 +34,28 @@
     flex: 0 0 10%;
     background: lightgrey;
     order: 1;
+    overflow-x: hidden;
   }
 
 
+
   /*Dropdown button https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_sidenav_dropdown*/
-  .sidenav a, .dropdown-btn {
+   .sidenav a, .dropdown-btn{
     padding: 6px 8px 6px 16px;
     text-decoration: none;
     display: block;
     border: none;
-    font:20px;
+    font-size:20px;
+    color: black;
     background: none;
     width: 100%;
-    text-align: left;
+    text-align:left; 
     cursor: pointer;
     outline: none;
+  }
+
+  .dropdown-container a{
+    color: black;
   }
 
   .sidenav a:hover, .dropdown-btn:hover {
