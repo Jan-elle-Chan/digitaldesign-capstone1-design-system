@@ -12,7 +12,7 @@
     height: 15vh;
   }
 
-  header img{
+  footer img{
     float:left;
     overflow: auto;
     margin: 0;
@@ -33,6 +33,31 @@ header h1{
     margin: 0;
     font-family: "Lato", sans-serif;
   }
+
+ .horizontal-flex-container{
+    display:flex;
+    flex-direction: row;
+  }
+
+
+  .vertical-flex-container{
+    display:flex;
+    flex-direction: column;
+  }
+
+  .card{
+background-color: bisque;
+border-radius: 5px;
+padding: 10px;
+margin:10px;
+  }
+
+  .element-card{
+    background-color: bisque;
+    border-radius: 5px;
+    padding: 10px;
+    margin:15px;
+      }
 
   .main {
     display: flex;
@@ -89,7 +114,7 @@ header h1{
     
     footer{
       background: grey;
-      height: 5vh;
+      height: 10vh;
     }
     header, footer, article, nav{
       padding: 1em;
