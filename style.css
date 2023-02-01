@@ -52,12 +52,13 @@ padding: 10px;
 margin:10px;
   }
 
-  .element-card{
-    background-color: bisque;
-    border-radius: 0px;
-    padding: 10px;
-    margin: 0px;/*top right bottom left*/
+  .elementcode-card{
+    width: calc(75% - 30px);
       }
+      .elementimage-card{
+        width: calc(25% - 30px);
+          }
+      
 
   .main {
     display: flex;
