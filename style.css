@@ -127,6 +127,24 @@ body {
   padding: 6px 8px 6px 16px;
 }
 
+/*table style*/
+table {
+  border-collapse: collapse;
+  border: 1px solid black;
+  text-align: left;
+	vertical-align: middle;
+}
+
+thead {
+  background-color: lightgrey;
+
+}
+th, td {
+  border-collapse: collapse;
+  border: 1px solid black;
+  padding: 8px;
+}
+
 footer {
   background: grey;
   height: 10vh;
