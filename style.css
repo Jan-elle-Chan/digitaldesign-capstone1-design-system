@@ -128,6 +128,7 @@ body {
 }
 
 /*table style*/
+/*https://www.digitalocean.com/community/tutorials/how-to-style-a-table-with-css*/
 table {
   border-collapse: collapse;
   border: 1px solid black;
@@ -143,6 +144,31 @@ th, td {
   border-collapse: collapse;
   border: 1px solid black;
   padding: 8px;
+}
+/*https://www.w3schools.com/howto/howto_css_circles.asp*/
+.round-rectangle {
+  height: 35px;
+  width: 105px;
+  border-radius: 25%;
+  display: inline-block;
+}
+
+.header-bgcolor{
+  background: rgb(25, 76, 186);
+}
+.nav-bgcolor{
+  background-color: rgb(237, 232, 139);
+}
+
+.cards-bgcolor{
+  background-color: rgb(194, 192, 171);
+}
+
+.interactive-bgcolor{
+  background-color: rgb(234, 53, 33);
+}
+.footer-bgcolor{
+  background-color: rgb(25, 76, 186);
 }
 
 footer {
