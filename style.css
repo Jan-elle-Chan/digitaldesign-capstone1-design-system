@@ -12,6 +12,20 @@
     height: 15vh;
   }
 
+  header img{
+    float:left;
+    overflow: auto;
+    margin: 0;
+    padding: 20;
+  height: 75px;;
+width:auto;
+}
+
+header h1{
+  text-align: center;
+  font-size: 50px;
+}
+
   body {
     display: flex;
     min-height: 100vh;
@@ -59,7 +73,7 @@
   }
 
   .sidenav a:hover, .dropdown-btn:hover {
-    color: #f1f1f1;
+    color: white;
   }
   .active {
     background-color: green;
