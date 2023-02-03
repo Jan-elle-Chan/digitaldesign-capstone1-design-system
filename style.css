@@ -88,7 +88,7 @@ body {
 
 .main nav {
   flex: 0 0 10%;
-  background: rgb(241, 237, 179);
+  background: #ffffd5;
   order: 1;
   overflow-x: hidden;
 }
@@ -115,16 +115,16 @@ body {
 
 .sidenav a:hover,
 .dropdown-btn:hover {
-  color: white;
+  color: black;
 }
 .active {
   background-color: lightsalmon;
-  color: white;
+  color: black;
 }
 
 .dropdown-container {
   display: none;
-  background-color: rgb(241, 237, 179);
+  background-color: #ffffd5;
   padding: 6px 8px 6px 16px;
 }
 
