@@ -10,7 +10,7 @@ html {
 }
 
 header {
-  background: grey;
+  background: rgb(53, 95, 185);
   height: 15vh;
 }
 
@@ -48,6 +48,7 @@ body {
   font-size: 2.5rem;
   line-height: 3.5rem;
   color: black;
+  background-color: rgb(254, 254, 223);
 }
 
 .horizontal-flex-container {
@@ -87,7 +88,7 @@ body {
 
 .main nav {
   flex: 0 0 10%;
-  background: lightgrey;
+  background: rgb(241, 237, 179);
   order: 1;
   overflow-x: hidden;
 }
@@ -117,13 +118,13 @@ body {
   color: white;
 }
 .active {
-  background-color: green;
+  background-color: lightsalmon;
   color: white;
 }
 
 .dropdown-container {
   display: none;
-  background-color: lightgrey;
+  background-color: rgb(241, 237, 179);
   padding: 6px 8px 6px 16px;
 }
 
@@ -156,28 +157,28 @@ th, td {
 }
 
 .header-bgcolor{
-  background: rgb(25, 76, 186);
+  background: rgb(53, 95, 185);
 }
-.nav-bgcolor{
-  background-color: rgb(237, 232, 139);
+.sidenav-bgcolor{
+  background-color:rgb(233, 220, 32) ;
 }
 
 body-bgcolor{
-  background-color: white;
+  background-color:rgb(236, 233, 185);
 }
 .cards-bgcolor{
-  background-color: rgb(194, 192, 171);
+  background-color: white;
 }
 
 .interactive-bgcolor{
-  background-color: rgb(234, 53, 33);
+  background-color: rgb(204, 70, 26);
 }
 .footer-bgcolor{
-  background-color: rgb(25, 76, 186);
+  background-color: white;
 }
 
 footer {
-  background: grey;
+  background: white;
   height: 10vh;
 }
 header,
