@@ -3,13 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><!--Makes page responsive-->
-    <title>Home</title>
+    <title>Style - Typography</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
   </head>
-  <body class>
+  <body>
     <header class="header-bgcolor">
       
       <h1> Wave DS</h1>
@@ -47,22 +47,61 @@
       </nav>
       <article class="flex-container">
         <section class="card">
-          <h2>Why do we need design systems?</h2>
-          <p>Design systems provide developers with a single source of design information, which can be used to create and maintain digital products for an organisation.</p>
-          <p> They are used to:</p>
-          <ul>
-            <li>Ensure quality and consistency</li>
-            <li>Train new team members</li>
-            <li>Reduce development time</li>
-          </ul>
+          <h2>Typography</h2>
+          <p>This section provides guidelines on how type should be styled for all digital products. </p>
+          <p> Typography is important for several reasons, including, but not limited to:
+            <ul>
+              <li>Establishing visual hierarchy</li>
+              <li>Ensures content discovery and readability</li>
+              <li>Branding</li>
+            </ul>
+          </p>
         </section>
+        <section class="card flex-container">
+          
+          <h3>Typefaces</h3>
+          <p>A typeface is a family of fonts, but a font is a particular style within that family.</p>
+          <p>Two typefaces will be used for Caribbean Chef: Courgio and Helveltica-sans-serif.</p>
+          <p>See the table below for details of use.</p>
+          
+            <table style="overflow-x:auto;">
+              <tr>
+                <th>Font</th>
+                <th>Use</th>
+                <th>Sample</th>
+              </tr>
+              <tr>
+               <td>Courgette</td>
+               <td>To display page title in header</td>
+               <td><h1>Like many great food ...</h1></td>
+               <!--https://www.bbc.com/travel/article/20210526-doubles-trinidads-favourite-street-food-->
+              </tr>
+              <tr>
+                <td>Helveltica</td>
+                <td>To identify sections of content, the section names are enclosed within the H2 tags</td>
+                <td><h2>Like many great food traditions, doubles are part cultural tradition and part legend.</h2></td>
+              </tr>
+              <tr>
+                <td>Helveltica</td>
+                <td>To identify sub-sections of content, the section names are enclosed within the H3 tags</td>
+                <td><h3>Like many great food traditions, doubles are part cultural tradition and part legend.</h3></td>
+              </tr>
+              <tr>
+                <td>Helveltica</td>
+                <td>To display page content placed within the body tag</td>
+                <td>Like many great food traditions, doubles are part cultural tradition and part legend.</td>
 
-        <section class="card">
-          <h2>Wave DS overview</h2>
-          <p>The Wave DS was developed for Caribbean Chef Ltd as a set of design guidelines for the creation of their website. </p>
-          <p> It is intended to be used by developers hired by the company to design, build and maintain their webiste and any future digital products.</p>
+              </tr>
+              
+            </table>
+          
+            
+            </div>
         </section>
-      </article>   
+        
+      </article>
+      
+      
 
 
     </main>
@@ -85,6 +124,7 @@
         });
       }
       </script>
+      
       
   </body>
   </html>

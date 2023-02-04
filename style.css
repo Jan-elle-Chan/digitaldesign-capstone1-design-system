@@ -38,7 +38,7 @@ h1 {
   text-align: center;
   font-size: 7.0rem;
   color: black;
-  font-family: 'Courgette', cursive;
+  font-family: 'Courgette', cursive
 }
 
 
@@ -57,12 +57,8 @@ body {
   background-color: aliceblue;
 }
 
-.horizontal-flex-container {
-  display: flex;
-  flex-direction: row;
-}
 
-.vertical-flex-container {
+.flex-container {
   display: flex;
   flex-direction: column;
 }
@@ -72,6 +68,7 @@ body {
   border-radius: 5px;
   padding: 20px;
   margin: 10px;
+  width:auto;
 }
 
 .elementcode-card {
@@ -143,8 +140,9 @@ table {
   border: 1px solid black;
   text-align: left;
 	vertical-align: middle;
-  margin-left:auto;
-  margin-right:auto;
+  width:100%
+  /*margin-left:auto;
+  margin-right:auto;*/
 }
 
 thead {
@@ -199,8 +197,34 @@ nav {
 }
 
 
-#textbox {
-  width: 70vw;
-  height: 30vh;
+.add-horizontal-scroll{
+  overflow-x: auto;
 }
 
+/*Styles for responsiveness
+
+@media only screen and (min-width: 768px) {
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  nav .menu-label {
+    display: none;
+  }
+
+  
+  nav .toggle {
+    display: none;
+  }
+}
+
+Extra large devices (large laptops and desktops, 1200px and up) 
+@media only screen and (min-width: 1200px) {
+  nav ul,
+  main {
+    width: 100%;
+    margin: 0;
+  }
+}
+*/
