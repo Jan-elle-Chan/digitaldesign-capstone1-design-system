@@ -10,7 +10,6 @@ html {
 }
 
 header {
-  background: rgb(53, 95, 185);
   height: 15vh;
 }
 
@@ -62,7 +61,7 @@ body {
 }
 
 .card {
-  background-color: white;
+  background-color: rgb(250, 251, 247);
   border-radius: 5px;
   padding: 20px;
   margin: 10px;
@@ -88,7 +87,6 @@ body {
 
 .main nav {
   flex: 0 0 10%;
-  background: #ffffd5;
   order: 1;
   overflow-x: hidden;
 }
@@ -157,17 +155,17 @@ th, td {
 }
 
 .header-bgcolor{
-  background: rgb(53, 95, 185);
+  background-color: rgb(53, 95, 185);
 }
 .sidenav-bgcolor{
-  background-color:rgb(233, 220, 32) ;
+  background-color:white;
 }
 
-body-bgcolor{
-  background-color:rgb(236, 233, 185);
-}
+.body-bgcolor{
+  background-color:  #ffffd5
+;}
 .cards-bgcolor{
-  background-color: white;
+  background-color: rgb(250, 251, 247);
 }
 
 .interactive-bgcolor{
@@ -186,4 +184,28 @@ footer,
 article,
 nav {
   padding: 1em;
+}
+
+
+#textbox {
+  width: 70vw;
+  height: 30vh;
+}
+
+button {
+  width: 70px;
+  height: 40px;
+  background-color: green;
+  color: white;
+  border-radius: 10px;
+  box-shadow: grey;
+}
+
+#clipboard {
+  width: 70vw;
+  margin: 50px;
+  background-color: green;
+  color: white;
+  padding: 20px;
+  font-size: x-large;
 }
