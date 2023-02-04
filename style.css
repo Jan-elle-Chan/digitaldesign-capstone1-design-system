@@ -29,6 +29,9 @@ footer img {
   padding: 20;
   height: auto;
   width: 100px;
+  border: 1px solid black;
+  margin-left:auto;
+  margin-right:auto;
 }
 
 header h1 {
@@ -37,17 +40,19 @@ header h1 {
 }
 
 
-
+.sidenav{
+  background-color: lightgrey;
+}
 body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
   margin: 0;
   font-family: "Helveltica", sans-serif;
-  font-size: 2.5rem;
-  line-height: 3.5rem;
+  font-size: 2.0rem;
+  line-height: 3.0rem;
   color: black;
-  background-color: rgb(254, 254, 223);
+  background-color: rgb(188, 219, 230);
 }
 
 .horizontal-flex-container {
@@ -61,7 +66,7 @@ body {
 }
 
 .card {
-  background-color: rgb(250, 251, 247);
+  background-color: white;
   border-radius: 5px;
   padding: 20px;
   margin: 10px;
@@ -105,6 +110,7 @@ body {
   text-align: left;
   cursor: pointer;
   outline: none;
+  background-color: lightgrey;
 }
 
 .dropdown-container a {
@@ -116,15 +122,17 @@ body {
   color: black;
 }
 .active {
-  background-color: lightsalmon;
+  background-color: darkgrey;
   color: black;
 }
 
 .dropdown-container {
   display: none;
-  background-color: #ffffd5;
+  background-color: lightgrey;
   padding: 6px 8px 6px 16px;
 }
+
+
 
 /*table style*/
 /*https://www.digitalocean.com/community/tutorials/how-to-style-a-table-with-css*/
@@ -133,10 +141,12 @@ table {
   border: 1px solid black;
   text-align: left;
 	vertical-align: middle;
+  margin-left:auto;
+  margin-right:auto;
 }
 
 thead {
-  background-color: lightgrey;
+  background-color: darkgrey;
 
 }
 th, td {
@@ -192,20 +202,3 @@ nav {
   height: 30vh;
 }
 
-button {
-  width: 70px;
-  height: 40px;
-  background-color: green;
-  color: white;
-  border-radius: 10px;
-  box-shadow: grey;
-}
-
-#clipboard {
-  width: 70vw;
-  margin: 50px;
-  background-color: green;
-  color: white;
-  padding: 20px;
-  font-size: x-large;
-}

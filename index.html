@@ -6,7 +6,7 @@
     <title>Home</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body class="body-bgcolor">
+  <body class>
     <header class="header-bgcolor">
       
       <h1> Wave DS</h1>
@@ -48,7 +48,7 @@
           <p>Design systems provide developers with a single source of design information, which can be used to create and maintain digital products for an organisation.</p>
           <p> They are used to:</p>
           <ul>
-            <li>Ensure qaulity and consistency</li>
+            <li>Ensure quality and consistency</li>
             <li>Train new team members</li>
             <li>Reduce development time</li>
           </ul>
@@ -57,39 +57,13 @@
         <section class="card">
           <h2>Wave DS overview</h2>
           <p>The Wave DS was developed for Caribbean Chef Ltd as a set of design guidelines for the creation of their website. </p>
-          <center>
-            <textarea id="textbox"></textarea><br />
-            <button onclick="copyText()">Copy</button>
-            <br />
-            <h1>Copied Text:</h1><br />
-            <span id="clipboard">NA</span>
-        </center>
-      
-        <script>
-            function copyText() {
-          
-                /* Select text area by id*/
-                var Text = document.getElementById("textbox");
-      
-                /* Select the text inside text area. */
-                Text.select();
-      
-                /* Copy selected text into clipboard */
-                navigator.clipboard.writeText(Text.value);
-      
-                /* Set the copied text as text for 
-                div with id clipboard */
-                document.getElementById("clipboard")
-                    .innerHTML = Text.value;
-            }
-        </script>
           <p> It is intended to be used by developers hired by the company to design, build and maintain their webiste and any future digital products.</p>
         </section>
       </article>   
 
 
     </main>
-    <footer class="footer-bgcolor"><img src="images/CC Logo.jpg" alt="Caribbean Chef Logo"/></footer>
+    <footer><img src="images/CC Logo.jpg" alt="Caribbean Chef Logo"/></footer>
     <script>
       /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict 
       Source for javascript dropdown menu buttons Dropdown button https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_sidenav_dropdown*/
