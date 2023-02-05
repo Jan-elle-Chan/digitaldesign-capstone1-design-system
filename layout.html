@@ -3,16 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><!--Makes page responsive-->
-    <title>Home</title>
+    <title>Layout</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
   </head>
-  <body >
+  <body>
     <header class="header-bgcolor">
-      
-      <h1> Wave DS</h1>
+     
+      <h1> Layout</h1>
     </header>
   <main class="main">
     <nav class="sidenav">
@@ -47,22 +47,46 @@
       </nav>
       <article class="flex-container">
         <section class="card">
-          <h2>Why do we need design systems?</h2>
-          <p>Design systems provide developers with a single source of design information, which can be used to create and maintain digital products for an organisation.</p>
-          <p> They are used to:</p>
-          <ul>
-            <li>Ensure quality and consistency</li>
-            <li>Train new team members</li>
-            <li>Reduce development time</li>
-          </ul>
+          <h2>Overview</h2>
+          <p>Layout refers to the arrangement of visual elements on a page so that the user can have a good experience. Page development should follow testing and reiteration of wireframes.</p>
+          <p>For example, a tooltip can be placed over a button to indicate that the user can clear form contents </p>
+          <p> All pages must include:
+            <ol>
+              <li>Headers containing an H1 page title with company name</li>
+              <li>Navigation menu</li>
+              <ul>
+                <li>Main navigation above the fold</li>
+                <li>Supplemental navigation below the fold in the footer</li>
+              </ul>
+              <li>Body with most important content above the fold</li>
+              <li>Footer with CC logo</li>
+            </ol>
+          </p>
         </section>
+          <section class="elementimage-card">
+            <h3>Recommended Layouts</h3>
+            <a href="cards.html">Code for cards</a> and <a href="navigation.html">navigation<a> are described in detail elsewhere on this site. 
 
-        <section class="card">
-          <h2>Wave DS overview</h2>
-          <p>The Wave DS was developed for Caribbean Chef Ltd as a set of design guidelines for the creation of their website. </p>
-          <p> It is intended to be used by developers hired by the company to design, build and maintain their webiste and any future digital products.</p>
-        </section>
-      </article>   
+            <figure >
+              <img src="images/twoColumnLayout.jpg" alt="Diagram of two-column webpage layout">
+                
+              <figcaption>Diagram of two-column webpage layout</figcaption>
+          </figure>
+          <br><br><br>
+          <figure>
+            <img src="images/threeColumnLayout.jpg" alt="Diagram of two-column webpage layout">
+              
+            <figcaption>Diagram of three-column webpage layout</figcaption>
+        </figure>
+      </section>
+            
+        
+        
+
+        
+      </article>
+      
+      
 
 
     </main>
@@ -85,6 +109,7 @@
         });
       }
       </script>
+      
       
   </body>
   </html>
