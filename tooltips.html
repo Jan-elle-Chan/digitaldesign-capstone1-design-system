@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><!--Makes page responsive-->
-    <title>Style - Typography</title>
+    <title>Components-Tooltips</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,7 +12,7 @@
   <body>
     <header class="header-bgcolor">
       
-      <h1> Wave DS</h1>
+      <h1> Components</h1>
     </header>
   <main class="main">
     <nav class="sidenav">
@@ -47,159 +47,43 @@
       </nav>
       <article class="flex-container">
         <section class="card">
-          <h2>Typography</h2>
-          <p>This section provides guidelines on how type should be styled for all digital products. </p>
-          <p> Typography is important for several reasons, including, but not limited to:
+          <h2>Tooltips</h2>
+          <p>Tooltips are used to provide information to the user about the purpose of an element or to indicate that an action is about to be cmpleted or has been completed. </p>
+          <p>For example, a tooltip can be placed over a button to indicate that the user can clear form contents </p>
+          <p> The tooltip should:
             <ul>
-              <li>Establishing visual hierarchy</li>
-              <li>Ensures content discovery and readability</li>
-              <li>Branding</li>
+              <li>Appear next to the element so that it does not cover important content, use styles </li>
+              <li>Be used only as needed</li>
+              <li>Contain brief instructions, up to five words</li>
             </ul>
           </p>
         </section>
-        <!--Section Typefaces-->
-        <section class="card flex-container">
-          <div>
-          <h3>Typefaces</h3>
-          <p>A typeface is a family of fonts, but a font is a particular style within that family.</p>
-          <p>Two typefaces will be used for Caribbean Chef: Courgio and Helveltica-sans-serif.</p>
-          <p>See the table below for details of use.</p>
-          <div class="add-horizontal-scroll">
-            <table>
-              <tr>
-                <th>Font</th>
-                <th>Use</th>
-                <th>Sample</th>
-              </tr>
-              <tr>
-               <td>Courgette</td>
-               <td>To display page title in header</td>
-               <td><h1>Like many great food ...</h1></td>
-               <!--https://www.bbc.com/travel/article/20210526-doubles-trinidads-favourite-street-food-->
-              </tr>
-              <tr>
-                <td>Helveltica</td>
-                <td>To identify sections of content, the section names are enclosed within the H2 tags</td>
-                <td><h2>Like many great food traditions, doubles are part cultural tradition and part legend.</h2></td>
-              </tr>
-              <tr>
-                <td>Helveltica</td>
-                <td>To identify sub-sections of content, the section names are enclosed within the H3 tags</td>
-                <td><h3>Like many great food traditions, doubles are part cultural tradition and part legend.</h3></td>
-              </tr>
-              <tr>
-                <td>Helveltica</td>
-                <td>To display page content placed within the body tag</td>
-                <td>Like many great food traditions, doubles are part cultural tradition and part legend.</td>
-
-              </tr>
-              
-            </table>      
-          </div>
+       
           
             <div class="elementcode-card">
-            <h3>Body Style Codepen</h3>
+            <h3>Tooltips over text Codepen</h3>
             <!--https://blog.hubspot.com/website/html-tooltip-->
-             <iframe id="myInput" height="300" style="width: 100%;" scrolling="no" title="Body Style Codepen" src="https://codepen.io/Jan-elle-Chan/embed/mdjQxeB?default-tab=html&theme-id=light" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-              <caption>Body Style Codepen</caption>
-              See the Pen <a href="https://codepen.io/Jan-elle-Chan/pen/mdjQxeB">
-              Untitled</a> by Jan-elle-Chan (<a href="https://codepen.io/Jan-elle-Chan">@Jan-elle-Chan</a>)
+            <iframe height="300" style="width: 100%;" scrolling="no" title="Tooltips" src="https://codepen.io/Jan-elle-Chan/embed/preview/GRBepvr?default-tab=html&theme-id=light" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+              See the Pen <a href="https://codepen.io/Jan-elle-Chan/pen/GRBepvr">
+              Tooltips</a> by Jan-elle-Chan (<a href="https://codepen.io/Jan-elle-Chan">@Jan-elle-Chan</a>)
               on <a href="https://codepen.io">CodePen</a>.
             </iframe>
             </div>
-            
-        </section>
-        <!--End of section Typefaces-->
 
-        <!--Section Whitespace-->
-        <section class="card vertical-flex-container">
-        <div>
-          <h3>Whitespace</h3>
-          <p>Whitespace, also called negative space consists of spaces, tabs and linebreaks between text, as well as the space between the elements on a page.</p>
-          <p>Whitespace in development files and webpages must both be considered.</p>
-          <h4>Whitespace in HTML files</h4>
-          <ul>
-            <li>Extra spaces between a string will be ignored, use special character sequences or tags to introduce whitespace</li>
-            <li>Use whitespace to indent code for readability
-           </ul>
-          
-          <!--https://www.thoughtco.com/html-space-tag-3466504#:~:text=You%20have%20several%20options%20for%20creating%20and%20controlling,create%20tab%20spaces%20in%20HTML.%20...%20More%20items-->
-            <table title="How to Add Whitespace to HTML document">
-              <caption><strong>How to Add Whitespace to HTML document</strong></caption>
-              <tr>
-                <th>Tag or Character</th>
-                <th>Use</th>
-              </tr>
-              <tr>
-               <td>&lt;br&gt;</td>
-               <td>To move text to next line, like a carriage return</td>
-              </tr>
-              <tr>
-                <td>&lt;p&gt;</td>
-                <td>To create a paragraph break within a block of text</td>
-              <tr>
-                  <td> &amp;nbsp; </pre></td>
-                  <td>To move text to next line, like a carriage return</td>
-                  </tr>
-              <tr>
-                  <td>&lt;pre&gt;</td>
-                  <td>To display text exactly as it appears bewteen the tags</td>
-              </tr>
-              
-            </table>
-            <iframe height="300" style="width: 100%;" scrolling="no" title="Whitespace Codepen " src="https://codepen.io/Jan-elle-Chan/embed/preview/PoBLogE?default-tab=html&theme-id=light" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-              See the Pen <a href="https://codepen.io/Jan-elle-Chan/pen/PoBLogE">
-              Untitled</a> by Jan-elle-Chan (<a href="https://codepen.io/Jan-elle-Chan">@Jan-elle-Chan</a>)
-              on <a href="https://codepen.io">CodePen</a>.
-            </iframe>
-          </div>            
-        </section>
-        <!--End of section Whitespace-->
-
-         <!--Section Alignment-->
-         <section class="card vertical-flex-container">
-          <div>
-            <h3>Alignment</h3>
-            <p>Whitespace, also called negative space consists of spaces, tabs and linebreaks between text, as well as the space between the elements on a page.</p>
-            <p>Whitespace in development files and webpages must both be considered.</p>
-            <h4>Whitespace in HTML files</h4>
-            <ul>
-              <li>Extra spaces between a string will be ignored, use special character sequences or tags to introduce whitespace</li>
-              <li>Use whitespace to indent code for readability
-             </ul>
-            
-            
-              <table title="How to Add Whitespace to HTML document">
-                <caption><strong>How to Add Whitespace to HTML document</strong></caption>
-                <tr>
-                  <th>Tag or Character</th>
-                  <th>Use</th>
-                </tr>
-                <tr>
-                 <td>&lt;br&gt;</td>
-                 <td>To move text to next line, like a carriage return</td>
-                </tr>
-                <tr>
-                  <td>&lt;p&gt;</td>
-                  <td>To create a paragraph break within a block of text</td>
-                <tr>
-                    <td> &amp;nbsp; </pre></td>
-                    <td>To move text to next line, like a carriage return</td>
-                    </tr>
-                <tr>
-                    <td>&lt;pre&gt;</td>
-                    <td>To display text exactly as it appears bewteen the tags</td>
-                </tr>
-                
-              </table>
-              <iframe height="300" style="width: 100%;" scrolling="no" title="Whitespace Codepen " src="https://codepen.io/Jan-elle-Chan/embed/preview/PoBLogE?default-tab=html&theme-id=light" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-                See the Pen <a href="https://codepen.io/Jan-elle-Chan/pen/PoBLogE">
-                Untitled</a> by Jan-elle-Chan (<a href="https://codepen.io/Jan-elle-Chan">@Jan-elle-Chan</a>)
+            <div class="elementcode-card">
+              <h3>Tooltips on buttons</h3>
+              <!--https://blog.hubspot.com/website/html-tooltip-->
+              <iframe height="300" style="width: 100%;" scrolling="no" title="Tooltips on buttons" src="https://codepen.io/Jan-elle-Chan/embed/preview/abjMvrO?default-tab=html&theme-id=light" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                See the Pen <a href="https://codepen.io/Jan-elle-Chan/pen/abjMvrO">
+                Tooltips on buttons</a> by Jan-elle-Chan (<a href="https://codepen.io/Jan-elle-Chan">@Jan-elle-Chan</a>)
                 on <a href="https://codepen.io">CodePen</a>.
               </iframe>
-            </div>            
-          </section>
-          <!--End of section Alignment-->
+              </div>
+            
+        </section>
+        <!--End of section Tooltips-->
+
+        
       </article>
       
       
