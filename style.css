@@ -75,6 +75,13 @@ body {
   width:auto;
 }
 
+.small-card{
+  border-radius: 5px;
+  padding: 20px;
+  margin: 10px;
+  width:30%;
+}
+
 .elementcode-card {
   width: calc(75% - 30px);
   padding: 20px;
@@ -173,23 +180,57 @@ th, td {
   display: inline-block;
 }
 
+.button {
+  display: block;
+  margin: 0 auto;
+  padding: 15px;
+  border: none;
+  border-radius: 7px;
+  font-size: large;
+  cursor: pointer;
+  transition: color 0.5s ease-in-out;
+  align-self: middle;
+}
+
 .header-bgcolor{
   background-color: rgb(53, 95, 185);
 }
 .sidenav-bgcolor{
-  background-color:white;
+  background-color:rgb(250, 251, 247);
 }
 
 .body-bgcolor{
-  background-color:  #ffffd5
-;}
+  background-color:  #ffffd5;
+}
 .cards-bgcolor{
   background-color: rgb(250, 251, 247);
 }
 
-.interactive-bgcolor{
-  background-color: rgb(204, 70, 26);
+.active-bgcolor{
+  background-color: #FF8000;
 }
+.active-border{
+  background-color: #331900;
+}
+
+.inactive-bgcolor{
+  background-color: #FFCC99;
+
+}
+
+.inactive-border{
+  background-color: #CB6E10;
+}
+
+.body-font{
+  background-color: #000000;
+}
+
+.page-title-font{
+  background-color: #FFFFFF;
+}
+
+
 .footer-bgcolor{
   background-color: white;
 }
@@ -197,12 +238,6 @@ th, td {
 footer {
   background: white;
   height: 10vh;
-}
-header,
-footer,
-article,
-nav {
-  padding: 1em;
 }
 
 
@@ -238,64 +273,3 @@ Extra large devices (large laptops and desktops, 1200px and up)
 }
 */
 
-html, body {
-  margin: 0;
-  padding: 0;
-}
-
-.pic-ctn {
-  width: 50%;
-  height: auto;
-  background-color:aliceblue;
-}
-
-@keyframes display {
-  0% {
-    transform: translateX(200px);
-    opacity: 0;
-  }
-  10% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-  20% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-  30% {
-    transform: translateX(-200px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(-200px);
-    opacity: 0;
-  }
-}
-
-.pic-ctn {
-  position:relative;
-  width: 50vw;
-  height: 300px;
-  margin-top: 15vh;
-}
-
-.pic-ctn > img {
-  position: absolute;
-  top: 0;
-  left: calc(50% - 100px);
-  opacity: 0;
-  animation: display 10s infinite;
-}
-
-img:nth-child(2) {
-  animation-delay: 2s;
-}
-img:nth-child(3) {
-  animation-delay: 4s;
-}
-img:nth-child(4) {
-  animation-delay: 6s;
-}
-img:nth-child(5) {
-  animation-delay: 8s;
-}
