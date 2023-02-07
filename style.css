@@ -75,6 +75,11 @@ body {
   width:auto;
 }
 
+/*https://www.w3schools.com/html/html_iframe.asp*/
+iframe{
+  border:2px double darkgrey;
+}
+
 .small-card{
   border-radius: 5px;
   padding: 20px;
@@ -83,7 +88,7 @@ body {
 }
 
 .elementcode-card {
-  width: calc(75% - 30px);
+  width: auto;
   padding: 20px;
 }
 .elementimage-card {
