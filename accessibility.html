@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><!--Makes page responsive-->
-    <title>Components-Tooltips</title>
+    <title>Layout-Accessibility</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,7 +12,7 @@
   <body>
     <header class="header-bgcolor">
       
-      <h1> Components</h1>
+      <h1> Accessibility</h1>
     </header>
   <main class="main">
     <nav class="sidenav">
@@ -47,16 +47,72 @@
       </nav>
       <article class="flex-container">
         <section class="card">
-          <h2>Tooltips</h2>
-          <p>Tooltips are used to provide information to the user about the purpose of an element or to indicate that an action is about to be cmpleted or has been completed. </p>
-          <p>For example, a tooltip can be placed over a button to indicate that the user can clear form contents </p>
-          <p> The tooltip should:
-            <ul>
-              <li>Appear next to the element so that it does not cover important content, use styles </li>
-              <li>Be used only as needed</li>
-              <li>Contain brief instructions, up to five words</li>
-            </ul>
-          </p>
+          <h2>Web Accessibility</h2>
+          <p>Websites must be designed so that persons with the following permanent or temporary conditions may access them and have a seamless experience:</p>
+          <ul>
+            <li>Blindness or poor vision</li>
+            <li>Deafness or hearing difficulties</li>
+            <li>Cognitive and learning disabilites</li>
+            <li>Technological disdavantage such as poor Internet or low memory</li>
+            <li>Environment that is not conducive to accessing web content</li>
+          </ul>
+
+          <br>
+          <table title="How to Add Whitespace to HTML document">
+            <caption><strong>Designing for Accessibility</strong></caption>
+            <tr>
+              <th>Page Element</th>
+              <th>Guidelines for accessibility</th>
+              <th>HTML/ CSS required</th>
+            </tr>
+            <tr>
+             <td>Images</td>
+             <td>To move text to next line, like a carriage return</td>
+             <td>To move text to next line, like a carriage return</td>
+            </tr>
+            <tr>
+              <td>Tables</td>
+              <td>To move text to next line, like a carriage return</td>
+              <td>To move text to next line, like a carriage return</td>
+             </tr>
+             <tr>
+              <td>Iframes</td>
+              <td>Always use a clear title </td>
+              <td><pre></pre>></td>
+             </tr>
+            <tr>
+              <td>Forms</td>
+              <td>Dealt with in detail in <a href="forms.html">Forms</a> section </td>
+                <td><a href="forms.html">Navigation guidelines</a></td>
+            </tr>
+            <tr>
+                <td> Audio and Video</pre></td>
+                <td><ul>
+                  <li>Allow usrs to choose their own pace, transcripts and playback controls</li>
+                  <li>Provide options for captions and volume</li>
+                </ul></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Navigation</td>
+                <td>Dealt with in detail in <a href="navigation.html">Navigation</a> section </td>
+                <td><a href="navigation.html">Navigation guidelines</a></td>
+            </tr>
+            <tr>
+              <td>Text</pre></td>
+              <td><ul>
+                <li>Use simple, clear language that is easy to understand</li>
+                <li>Group content and place under headings so users can skim and select</li>
+            
+              </ul> </td>
+              <td><ul>
+                <li>&lt;H1&gt; to &lt;H6&gt; tags</li>
+              </ul>
+
+                </td>
+          </tr>
+            
+          </table>
         </section>
        
           
