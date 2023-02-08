@@ -259,6 +259,10 @@ footer {
   height: 10vh;
 }
 
+footer a{
+  text-decoration: none;
+  text-align: center;
+}
 
 .add-horizontal-scroll{
   overflow-x: auto;
