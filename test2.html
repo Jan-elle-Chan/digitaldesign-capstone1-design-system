@@ -1,123 +1,121 @@
-<!DOCTYPE html> 
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+.sidebar a,
+.dropdown-btn {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  display: block;
+  border: none;
+  font-size: 20px;
+  color: black;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+  background-color: lightgrey;
+}
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
 
-<html> 
+.dropdown-container {
+  display: none;
+  background-color: lightgrey;
+  padding: 6px 8px 6px 16px;
+}
 
-  
 
-<head> 
-
-    <style> 
-
-        #textbox { 
-
-            width: 70vw; 
-
-            height: 30vh; 
-
-        } 
-
-  
-
-        button { 
-
-            width: 70px; 
-
-            height: 40px; 
-
-            background-color: green; 
-
-            color: white; 
-
-            border-radius: 10px; 
-
-            box-shadow: grey; 
-
-        } 
-
-  
-
-        #clipboard { 
-
-            width: 70vw; 
-
-            margin: 50px; 
-
-            background-color: green; 
-
-            color: white; 
-
-            padding: 20px; 
-
-            font-size: x-large; 
-
-        } 
-
-    </style> 
-
-</head> 
-
-  
-
-<body> 
-
-    <center> 
-
-        <!--<textarea id="textbox"></textarea><br /> -->
-<table>
-  <tr><th>Code</th></tr>
-  <tr><td><xmp id="textbox"><h1>heading</h1></xmp></td></tr>
-</table>
-        <button onclick="copyText()">Copy</button> 
-
-        <br/> 
-
-        <h1>Copied Text:</h1><br /> 
-
-        <span id="clipboard">NA</span> 
-
-    </center> 
-
-  
-
-    <script> 
-
-        function copyText() { 
-
-      
-
-            /* Select text area by id*/ 
-
-            var Text = document.getElementById("textbox"); 
-
-  
-
-            /* Select the text inside text area. */ 
-
-            Text.select(); 
-
-  
-
-            /* Copy selected text into clipboard */ 
-
-            navigator.clipboard.writeText(Text.value); 
-
-  
-
-            /* Set the copied text as text for  
-
-            div with id clipboard */ 
-
-            document.getElementById("clipboard") 
-
-                .innerHTML = Text.value; 
-
-        } 
-
-    </script> 
-
-</body> 
-
-  
-
-</html> 
  
+.sidebar a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.dropdown-btn:hover{
+background-color: #555;
+  color: white;
+}
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="sidebar">
+  <a class="active" href="#home">Home</a>
+  <a href="#news">News</a>
+  <a href="#contact">Contact</a>
+  <a href="#about">About</a>
+  <button class="dropdown-btn">Components</button>
+        <div class="dropdown-container">
+          <a href="tooltips.html">Tooltips</a>
+          <a href="form.html">Forms</a>
+          <a href="cards.html">Cards</a>
+          <a href="carousel.html">Carousel</a>
+        </div>
+</div>
+
+<div class="content">
+  <h2>Responsive Sidebar Example</h2>
+  <p>This example use media queries to transform the sidebar to a top navigation bar when the screen size is 700px or less.</p>
+  <p>We have also added a media query for screens that are 400px or less, which will vertically stack and center the navigation links.</p>
+  <h3>Resize the browser window to see the effect.</h3>
+</div>
+<script>
+      /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict 
+      Source for javascript dropdown menu buttons Dropdown button https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_sidenav_dropdown*/
+      var dropdown = document.getElementsByClassName("dropdown-btn");
+      var i;
+      
+      for (i = 0; i < dropdown.length; i++) {
+        dropdown[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var dropdownContent = this.nextElementSibling;
+          if (dropdownContent.style.display === "block") {
+            dropdownContent.style.display = "none";
+          } else {
+            dropdownContent.style.display = "block";
+          }
+        });
+      }
+      </script>
+      </body>
+</html>
