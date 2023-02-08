@@ -11,7 +11,7 @@
   </head>
   <body>
     <header class="header-bgcolor">
-      
+      <!--https://webaccess.berkeley.edu/resources/tips/web-accessibility-->
       <h1> Accessibility</h1>
     </header>
   <main class="main">
@@ -58,7 +58,7 @@
           </ul>
 
           <br>
-          <table title="How to Add Whitespace to HTML document">
+          <table title="Designing for Accessibility">
             <caption><strong>Designing for Accessibility</strong></caption>
             <tr>
               <th>Page Element</th>
@@ -67,18 +67,28 @@
             </tr>
             <tr>
              <td>Images</td>
-             <td>To move text to next line, like a carriage return</td>
-             <td>To move text to next line, like a carriage return</td>
+             <td><ul>
+              <li>Use alt tags for images that describe image if it fails to download or cannot be found</li>
+              <li>Use caption tag to provide image details</li>
+          
+            </ul> </td>
+             <td><xmp><figure>
+            <img  src="red_box.jpg" alt="Red box">
+            <figcaption>Fig.1 - A Red box</figcaption>
+          </figure></xmp>
+
+            </td>
             </tr>
             <tr>
               <td>Tables</td>
               <td>To move text to next line, like a carriage return</td>
-              <td>To move text to next line, like a carriage return</td>
+              <td><xmp><table>
+              <caption>This is a table</caption></xmp></td>
              </tr>
              <tr>
               <td>Iframes</td>
               <td>Always use a clear title </td>
-              <td><pre></pre>></td>
+              <td><xmp><iframe title="Code for cards"></xmp></td>
              </tr>
             <tr>
               <td>Forms</td>
@@ -105,9 +115,9 @@
                 <li>Group content and place under headings so users can skim and select</li>
             
               </ul> </td>
-              <td><ul>
-                <li>&lt;H1&gt; to &lt;H6&gt; tags</li>
-              </ul>
+              <td>
+                &lt;H1&gt; to &lt;H6&gt; tags
+              
 
                 </td>
           </tr>
@@ -116,30 +126,7 @@
         </section>
        
           
-            <div class="elementcode-card">
-            <h3>Tooltips over text Codepen</h3>
-            <!--https://blog.hubspot.com/website/html-tooltip-->
-            <iframe height="300" style="width: 100%;" scrolling="no" title="Tooltips" src="https://codepen.io/Jan-elle-Chan/embed/preview/GRBepvr?default-tab=html&theme-id=light" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-              See the Pen <a href="https://codepen.io/Jan-elle-Chan/pen/GRBepvr">
-              Tooltips</a> by Jan-elle-Chan (<a href="https://codepen.io/Jan-elle-Chan">@Jan-elle-Chan</a>)
-              on <a href="https://codepen.io">CodePen</a>.
-            </iframe>
-            </div>
-
-            <div class="elementcode-card">
-              <h3>Tooltips on buttons</h3>
-              <!--https://blog.hubspot.com/website/html-tooltip-->
-              <iframe height="300" style="width: 100%;" scrolling="no" title="Tooltips on buttons" src="https://codepen.io/Jan-elle-Chan/embed/preview/abjMvrO?default-tab=html&theme-id=light" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-                See the Pen <a href="https://codepen.io/Jan-elle-Chan/pen/abjMvrO">
-                Tooltips on buttons</a> by Jan-elle-Chan (<a href="https://codepen.io/Jan-elle-Chan">@Jan-elle-Chan</a>)
-                on <a href="https://codepen.io">CodePen</a>.
-              </iframe>
-              </div>
             
-        </section>
-        <!--End of section Tooltips-->
-
-        
       </article>
       
       
@@ -164,6 +151,13 @@
           }
         });
       }
+
+      function copyText() {
+      
+      /* Copy text into clipboard */
+      navigator.clipboard.writeText
+          ("Geeksforgeeks is best learning platform.");
+  }
       </script>
       
       
