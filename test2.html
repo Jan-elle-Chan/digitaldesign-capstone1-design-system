@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -6,21 +7,7 @@ body {
   margin: 0;
   font-family: "Lato", sans-serif;
 }
-.sidebar a,
-.dropdown-btn {
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  display: block;
-  border: none;
-  font-size: 20px;
-  color: black;
-  background: none;
-  width: 100%;
-  text-align: left;
-  cursor: pointer;
-  outline: none;
-  background-color: lightgrey;
-}
+
 .sidebar {
   margin: 0;
   padding: 0;
@@ -30,27 +17,47 @@ body {
   height: 100%;
   overflow: auto;
 }
-
+.dropdown-btn,
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+  background-color: lightgrey;
+  font-size: 20px;
+  cursor: pointer;
+  border:none;
+  background: none;
+  text-align: center;
+ 
+}
+/*.dropdown-btn {
+padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  display: block;
+  border: none;
+  
+  color: black;
+  background: none;
+  width: 100%;
+  text-align: left;
+  
+  outline: none;
+}*/
+ 
+.sidebar a.active {
+  background-color: blue;
+  color: white;
+}
+.dropdown-btn:hover,
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
 .dropdown-container {
   display: none;
   background-color: lightgrey;
   padding: 6px 8px 6px 16px;
-}
-
-
- 
-.sidebar a.active {
-  background-color: #04AA6D;
-  color: white;
-}
-
-.dropdown-btn:hover{
-background-color: #555;
-  color: white;
-}
-.sidebar a:hover:not(.active) {
-  background-color: #555;
-  color: white;
 }
 
 div.content {
@@ -79,19 +86,39 @@ div.content {
 </head>
 <body>
 
-<div class="sidebar">
-  <a class="active" href="#home">Home</a>
-  <a href="#news">News</a>
-  <a href="#contact">Contact</a>
-  <a href="#about">About</a>
-  <button class="dropdown-btn">Components</button>
-        <div class="dropdown-container">
-          <a href="tooltips.html">Tooltips</a>
-          <a href="form.html">Forms</a>
-          <a href="cards.html">Cards</a>
-          <a href="carousel.html">Carousel</a>
-        </div>
-</div>
+
+    <nav class="sidebar">
+        <a href="index.html">Home</a>
+        <div class="dropdown-btn">Style</div>
+          <div class="dropdown-container">
+            <a href="typography.html">Typography</a>
+            <a href="colour.html">Colour</a>
+            <a href="spacing.html">Spacing</a>
+            <a href="imagepage.html">Images</a>
+          </div>
+        <div class="dropdown-btn">Layout</div>
+          <div class="dropdown-container">
+            <a href="responsive.html">Responsive Design</a>
+            <a href="accessibility.html">Accessibility</a>
+          </div>
+        <div class="dropdown-btn">Navigation</div>
+          <div class="dropdown-container">
+            <a href="navigationbar.html">Navigation Bar</a>
+            <a href="submenu.html">Sub-menus</a>
+            <a href="buttonpage.html">Buttons</a>
+          </div>
+          <div class="dropdown-btn">Components</div>
+          <div class="dropdown-container">
+            <a href="tooltips.html">Tooltips</a>
+            <a href="form.html">Forms</a>
+            <a href="cards.html">Cards</a>
+            <a href="carousel.html">Carousel</a>
+          </div>
+          <a href="support.html">Support</a>
+          <a href="website.html">Website</a>
+        </nav>
+  
+
 
 <div class="content">
   <h2>Responsive Sidebar Example</h2>
@@ -100,22 +127,23 @@ div.content {
   <h3>Resize the browser window to see the effect.</h3>
 </div>
 <script>
-      /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict 
-      Source for javascript dropdown menu buttons Dropdown button https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_sidenav_dropdown*/
-      var dropdown = document.getElementsByClassName("dropdown-btn");
-      var i;
-      
-      for (i = 0; i < dropdown.length; i++) {
-        dropdown[i].addEventListener("click", function() {
-          this.classList.toggle("active");
-          var dropdownContent = this.nextElementSibling;
-          if (dropdownContent.style.display === "block") {
-            dropdownContent.style.display = "none";
-          } else {
-            dropdownContent.style.display = "block";
-          }
-        });
-      }
-      </script>
-      </body>
+    /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict 
+    Source for javascript dropdown menu buttons Dropdown button https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_sidenav_dropdown*/
+    var dropdown = document.getElementsByClassName("dropdown-btn");
+    var i;
+    
+    for (i = 0; i < dropdown.length; i++) {
+      dropdown[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var dropdownContent = this.nextElementSibling;
+        if (dropdownContent.style.display === "block") {
+          dropdownContent.style.display = "none";
+        } else {
+          dropdownContent.style.display = "block";
+        }
+      });
+    }
+    </script>
+    
+</body>
 </html>

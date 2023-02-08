@@ -3,6 +3,7 @@
 
   Sidebar navigaton, footer, banner and flexbox for page structure
   https://www.quackit.com/html/html_editors/scratchpad/?example=/css/flexbox/examples/flexbox_website_layout_1
+  https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_sidebar_responsive
   */
 
 html {
@@ -111,47 +112,53 @@ iframe{
 }
 
 .main nav {
-  flex: 0 0 10%;
+  flex-basis: 10%;
   order: 1;
   overflow-x: hidden;
 }
 
-/*Dropdown button https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_sidenav_dropdown*/
-.sidenav a,
-.dropdown-btn {
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
+article{
+  width:85%;
+  float:left;
+}
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 15%;
+  background-color: #f1f1f1;
+  position: relative;
+  
+}
+.dropdown-btn,
+.sidebar a {
   display: block;
-  border: none;
-  font-size: 20px;
   color: black;
-  background: none;
-  width: 100%;
-  text-align: left;
-  cursor: pointer;
-  outline: none;
+  padding: 16px;
+  text-decoration: none;
   background-color: lightgrey;
+  font-size: 20px;
+  cursor: pointer;
+  border:none;
+  background: none;
+  text-align: center;
+ 
 }
 
-.dropdown-container a {
-  color: black;
+ 
+.sidebar a.active {
+  background-color: blue;
+  color: white;
 }
-
-.sidenav a:hover,
-.dropdown-btn:hover {
-  color: black;
+.dropdown-btn:hover,
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
 }
-.active {
-  background-color: darkgrey;
-  color: black;
-}
-
 .dropdown-container {
   display: none;
   background-color: lightgrey;
   padding: 6px 8px 6px 16px;
 }
-
 
 
 /*table style*/
@@ -250,31 +257,22 @@ footer {
   overflow-x: auto;
 }
 
-/*Styles for responsiveness
+/*Styles for responsiveness*/
 
-@media only screen and (min-width: 768px) {
-  .flex-container {
-    display: flex;
-    flex-direction: row;
-  }
-
-  nav .menu-label {
-    display: none;
-  }
-
-  
-  nav .toggle {
-    display: none;
-  }
-}
-
-Extra large devices (large laptops and desktops, 1200px and up) 
-@media only screen and (min-width: 1200px) {
-  nav ul,
-  main {
+@media screen and (max-width: 700px) {
+  .sidebar {
     width: 100%;
-    margin: 0;
+    height: auto;
+    position: relative;
   }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
 }
-*/
 
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+
+}
