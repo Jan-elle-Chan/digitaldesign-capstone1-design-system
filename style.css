@@ -116,7 +116,11 @@ iframe{
   order: 1;
   overflow-x: hidden;
 }
-
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
 article{
   width:85%;
   float:left;
