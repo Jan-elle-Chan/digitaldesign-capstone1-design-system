@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><!--Makes page responsive-->
+    <title>Layout-Responsive Design</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header class="header-bgcolor">
+     
+      <h1> Responsive Layouts</h1>
+    </header>
+  <main class="main">
+    <nav class="sidenav">
+      <a href="index.html">Home</a>
+      <button class="dropdown-btn">Style</button>
+        <div class="dropdown-container">
+          <a href="typography.html">Typography</a>
+          <a href="colour.html">Colour</a>
+          <a href="spacing.html">Spacing</a>
+          <a href="imagepage.html">Images</a>
+        </div>
+      <button class="dropdown-btn">Layout</button>
+        <div class="dropdown-container">
+          <a href="responsive.html">Responsive Design</a>
+          <a href="accessibility.html">Accessibility</a>
+        </div>
+      <button class="dropdown-btn">Navigation</button>
+        <div class="dropdown-container">
+          <a href="navigationbar.html">Navigation Bar</a>
+          <a href="submenu.html">Sub-menus</a>
+          <a href="buttonpage.html">Buttons</a>
+        </div>
+        <button class="dropdown-btn">Components</button>
+        <div class="dropdown-container">
+          <a href="tooltips.html">Tooltips</a>
+          <a href="form.html">Forms</a>
+          <a href="cards.html">Cards</a>
+          <a href="carousel.html">Carousel</a>
+        </div>
+        <a href="support.html">Support</a>
+        <a href="website.html">Website</a>
+      </nav>
+      <article class="flex-container">
+        <section class="card">
+          <h2>Overview</h2>
+          <p>Layout refers to the arrangement of visual elements on a page so that the user can have a good experience regardless of viewport size. Page development should follow testing and reiteration of wireframes.</p>
+         
+          <p> All pages must include:
+            <ol>
+              <li>Headers containing an H1 page title with company name</li>
+              <li>Navigation menu</li>
+              <ul>
+                <li>Main navigation above the fold</li>
+                <li>Supplemental navigation below the fold in the footer</li>
+              </ul>
+              <li>Body with most important content above the fold</li>
+              <li>Footer with CC logo</li>
+            </ol>
+          </p>
+        </section>
+          <section class="elementimage-card">
+            <h3>Recommended Layouts</h3>
+            <a href="cards.html">Code for cards</a> and <a href="navigation.html">navigation<a> are described in detail elsewhere on this site. 
+
+            <figure >
+              <img src="images/twoColumnLayout.jpg" alt="Diagram of two-column webpage layout">
+                
+              <figcaption>Diagram of two-column webpage layout, desktop and mobile</figcaption>
+          </figure>
+          <br><br><br>
+          <figure>
+            <img src="images/threeColumnLayout.jpg" alt="Diagram of two-column webpage layout">
+              
+            <figcaption>Diagram of three-column webpage layout, desktop and mobile</figcaption>
+        </figure>
+      </section>
+            
+        
+        
+
+        
+      </article>
+      
+      
+
+
+    </main>
+    <footer><img src="images/CC Logo.jpg" alt="Caribbean Chef Logo"/></footer>
+    <script>
+      /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict 
+      Source for javascript dropdown menu buttons Dropdown button https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_sidenav_dropdown*/
+      var dropdown = document.getElementsByClassName("dropdown-btn");
+      var i;
+      
+      for (i = 0; i < dropdown.length; i++) {
+        dropdown[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var dropdownContent = this.nextElementSibling;
+          if (dropdownContent.style.display === "block") {
+            dropdownContent.style.display = "none";
+          } else {
+            dropdownContent.style.display = "block";
+          }
+        });
+      }
+      </script>
+      
+      
+  </body>
+  </html>
