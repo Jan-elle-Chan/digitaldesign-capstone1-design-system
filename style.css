@@ -222,20 +222,23 @@ th, td {
   background-color: rgb(250, 251, 247);
 }
 
-.active-bgcolor{
+.active1-bgcolor{
   background-color: #FF8000;
+}
+.active2-bgcolor{
+  background-color: #FFCC99;
 }
 .active-border{
   background-color: #331900;
 }
 
 .inactive-bgcolor{
-  background-color: #FFCC99;
+  background-color: #F0DECB;
 
 }
 
 .inactive-border{
-  background-color: #CB6E10;
+  background-color: #6B6764;
 }
 
 .body-font{
