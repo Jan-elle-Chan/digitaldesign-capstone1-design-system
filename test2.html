@@ -13,12 +13,36 @@
   <a href="#news">News</a>
   <a href="#contact">Contact</a>
   <a href="#about">About</a>
+  <div class="dropdown-btn">Style</div>
+        <div class="dropdown-container">
+          <a href="typography.html">Typography</a>
+          <a href="colour.html">Colour</a>
+          <a href="spacing.html">Spacing</a>
+          <a href="imagepage.html">Images</a>
+        </div>
 </div>
 
 <!-- Page content -->
 <div class="content">
   ..
 </div>
-    
+<script>
+  /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict 
+  Source for javascript dropdown menu buttons Dropdown button https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_sidenav_dropdown*/
+  var dropdown = document.getElementsByClassName("dropdown-btn");
+  var i;
+  
+  for (i = 0; i < dropdown.length; i++) {
+    dropdown[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var dropdownContent = this.nextElementSibling;
+      if (dropdownContent.style.display === "block") {
+        dropdownContent.style.display = "none";
+      } else {
+        dropdownContent.style.display = "block";
+      }
+    });
+  }
+  </script>
 </body>
 </html>

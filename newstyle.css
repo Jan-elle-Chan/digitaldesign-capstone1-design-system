@@ -1,7 +1,7 @@
 .sidebar {
     margin: 0;
     padding: 0;
-    width: 200px;
+    width: 20vh;
     background-color: blue;
     position: fixed;
     height: 100%;
@@ -9,12 +9,27 @@
   }
   
   /* Sidebar links */
+  .dropdown-btn,
   .sidebar a {
     display: block;
     color: black;
     padding: 16px;
     text-decoration: none;
+    background-color: lightgrey;
+    cursor: pointer;
+  border:none;
+  background: none;
+  text-align: center;
+  font-size: 20px;
   }
+
+  .dropdown-container {
+    display: none;
+    background-color: lightgrey;
+    padding: 6px 8px 6px 16px;
+  }
+  
+
   
   /* Active/current link */
   .sidebar a.active {
@@ -32,7 +47,7 @@
   div.content {
     margin-left: 200px;
     padding: 1px 16px;
-    height: 1000px;
+    height: 100%;
     background-color: grey;
   }
   
