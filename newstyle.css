@@ -27,7 +27,7 @@ h1 {
     margin: 0;
     padding: 0;
     width: 20vh;
-    background-color: rgb(250, 251, 247);
+    background-color: #ffffed;
     position: fixed;
     height: 100%;
     overflow: auto;
@@ -40,7 +40,7 @@ h1 {
     color: black;
     padding: 16px;
     text-decoration: none;
-    background-color: rgb(250, 251, 247);
+    background-color: #ffffd5;
     cursor: pointer;
   border:none;
   background: none;
@@ -50,7 +50,7 @@ h1 {
 
   .dropdown-container {
     display: none;
-    background-color: rgb(250, 251, 247);
+    background-color: #ffffed;
     padding: 6px 8px 6px 16px;
     text-align: left;
     font-size: 1.5rem;
@@ -75,17 +75,18 @@ h1 {
   .content {
     margin-left: 20vh;
     padding: 2vh;
-    background-color: red;
-    
+    background-color: #ffffed;
     display: flex;
     flex-direction: column;
+    min-height: 0;
+    height: 100%;
   }
   
   .card {
-    background-color: green;
+    background-color: white;
     border-radius: 5px;
     padding: 20px;
-    margin: 10px;
+    margin: 5px;
     width:100%;
     height:100%;
     position: relative;
@@ -93,7 +94,33 @@ h1 {
     align-self: center;
    
   }
-  
+
+  .card2{
+    background-color: rgb(53, 95, 185);
+    border-radius: 5px;
+    padding: 20px;
+    margin: 5px;
+    width:100%;
+    height:100%;
+    position: relative;
+    overflow: auto;
+    align-self: center;
+   
+  }
+
+  footer {
+   
+    height: 10vh;
+  }
+
+  footer img {
+    float: left;
+    overflow: auto;
+    margin: 0;
+    padding: 20;
+    height: 75px;
+    width: auto;
+  }
   
   /* On screens that are less than 700px wide, make the sidebar into a topbar */
   @media screen and (max-width: 700px) {
