@@ -1,0 +1,289 @@
+/*Sidebar navigation css 
+  https://blog.hubspot.com/website/css-sidebar
+
+  Sidebar navigaton, footer, banner and flexbox for page structure
+  https://www.quackit.com/html/html_editors/scratchpad/?example=/css/flexbox/examples/flexbox_website_layout_1
+  https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_sidebar_responsive
+  */
+
+html {
+  font-size: 62.5%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+header {
+  height: 15vh;
+}
+
+footer img {
+  float: left;
+  overflow: auto;
+  margin: 0;
+  padding: 20;
+  height: 75px;
+  width: auto;
+}
+
+.sample img {
+  float: right;
+  overflow: auto;
+  margin: 0;
+  padding: 20;
+  height: auto;
+  width: 100px;
+  border: 1px solid black;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+h1 {
+  text-align: center;
+  font-size: 7.0rem;
+  color: black;
+  font-family: 'Courgette', cursive
+}
+
+
+.sidenav{
+  background-color: lightgrey;
+}
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  margin: 0;
+  font-family: "Helveltica", sans-serif;
+  font-size: 2rem;
+  line-height: 3rem;
+  color: black;
+  background-color: aliceblue;
+}
+
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  background-color: white;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 10px;
+  width:auto;
+}
+
+/*https://www.w3schools.com/html/html_iframe.asp*/
+iframe{
+  border:2px double darkgrey;
+}
+
+.small-card{
+  border-radius: 5px;
+  padding: 20px;
+  margin: 10px;
+  width:30%;
+}
+
+.elementcode-card {
+  width: auto;
+  padding: 20px;
+}
+.elementimage-card {
+  background-color: white;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 10px;
+  width:auto;
+  border-image: fill;
+}
+
+.main {
+  display: flex;
+  flex: 1;
+}
+
+.main article {
+  flex: 1;
+  order: 2;
+}
+
+.main nav {
+  flex-basis: 10%;
+  order: 1;
+  overflow-x: hidden;
+}
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+article{
+  width:85%;
+  float:left;
+}
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 15%;
+  background-color: #f1f1f1;
+  position: relative;
+  
+}
+.dropdown-btn,
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+  background-color: lightgrey;
+  font-size: 20px;
+  cursor: pointer;
+  border:none;
+  background: none;
+  text-align: center;
+ 
+}
+
+ 
+.sidebar a.active {
+  background-color: blue;
+  color: white;
+}
+.dropdown-btn:hover,
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+.dropdown-container {
+  display: none;
+  background-color: lightgrey;
+  padding: 6px 8px 6px 16px;
+}
+
+
+/*table style*/
+/*https://www.digitalocean.com/community/tutorials/how-to-style-a-table-with-css*/
+table {
+  border-collapse: collapse;
+  border: 1px solid black;
+  text-align: left;
+	vertical-align: middle;
+  width:100%
+  /*margin-left:auto;
+  margin-right:auto;*/
+}
+
+thead {
+  background-color: darkgrey;
+
+}
+th, td {
+  border-collapse: collapse;
+  border: 1px solid black;
+  padding: 8px;
+}
+/*https://www.w3schools.com/howto/howto_css_circles.asp*/
+.round-rectangle {
+  height: 35px;
+  width: 105px;
+  border-radius: 25%;
+  border: 1px solid black;
+  text-align: left;
+  display: inline-block;
+}
+
+.button {
+  display: block;
+  margin: 0 auto;
+  padding: 15px;
+  border: none;
+  border-radius: 7px;
+  font-size: large;
+  cursor: pointer;
+  transition: color 0.5s ease-in-out;
+  align-self: middle;
+}
+
+.header-bgcolor{
+  background-color: rgb(53, 95, 185);
+}
+.sidenav-bgcolor{
+  background-color:rgb(250, 251, 247);
+}
+
+.body-bgcolor{
+  background-color:  #ffffd5;
+}
+.cards-bgcolor{
+  background-color: rgb(250, 251, 247);
+}
+
+.active1-bgcolor{
+  background-color: #FF8000;
+}
+.active2-bgcolor{
+  background-color: #FFCC99;
+}
+.active-border{
+  background-color: #331900;
+}
+
+.inactive-bgcolor{
+  background-color: #F0DECB;
+
+}
+
+.inactive-border{
+  background-color: #6B6764;
+}
+
+.body-font{
+  background-color: #000000;
+}
+
+.page-title-font{
+  background-color: #FFFFFF;
+}
+
+
+.footer-bgcolor{
+  background-color: white;
+}
+
+footer {
+  background: white;
+  height: 10vh;
+}
+
+footer a{
+  text-decoration: none;
+  text-align: center;
+}
+
+.add-horizontal-scroll{
+  overflow-x: auto;
+}
+
+/*Styles for responsiveness*/
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+
+}

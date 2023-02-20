@@ -1,22 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><!--Makes page responsive-->
-    <title>Layout-Accessibility</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <header class="header-bgcolor">
-      <!--https://webaccess.berkeley.edu/resources/tips/web-accessibility-->
-      <h1> Accessibility</h1>
-    </header>
-  <main class="main">
-    <nav class="sidebar">
-      <a href="index.html">Home</a>
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" /><!--Makes page responsive-->
+      <title>Navigation Bars</title>
+      <link rel="stylesheet" href="style.css" />
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    </head>
+<body>
+ 
+
+    <!-- The sidebar -->
+<nav class="sidebar">
+  <a href="index.html">Home</a>
       <div class="dropdown-btn">Style</div>
         <div class="dropdown-container">
           <a href="typography.html">Typography</a>
@@ -42,123 +40,119 @@
           <a href="carousel.html">Carousel</a>
           <a href="tables.html">Tables</a>
         </div>
-      </nav>
-      <article class="flex-container">
-        <section class="card">
-          <h2>Web Accessibility</h2>
-          <p>Websites must be designed so that persons with the following permanent or temporary conditions may access them and have a seamless experience:</p>
-          <ul>
-            <li>Blindness or poor vision</li>
-            <li>Deafness or hearing difficulties</li>
-            <li>Cognitive and learning disabilites</li>
-            <li>Technological disdavantage such as poor Internet or low memory</li>
-            <li>Environment that is not conducive to accessing web content</li>
-          </ul>
+</nav>
 
-          <br>
-          <table title="Designing for Accessibility">
-            <caption><strong>Designing for Accessibility</strong></caption>
-            <tr>
-              <th>Page Element</th>
-              <th>Guidelines for accessibility</th>
-              <th>HTML/ CSS required</th>
-            </tr>
-            <tr>
-             <td>Images</td>
-             <td><ul>
-              <li>Use alt tags for images that describe image if it fails to download or cannot be found</li>
-              <li>Use caption tag to provide image details</li>
-          
-            </ul> </td>
-             <td><xmp><figure>
-            <img  src="red_box.jpg" alt="Red box">
-            <figcaption>Fig.1 - A Red box</figcaption>
-          </figure></xmp>
+<!-- Page content -->
 
-            </td>
-            </tr>
-            <tr>
-              <td>Tables</td>
-              <td>Always use caption tag</td>
-              <td><xmp><table>
-              <caption>This is a table</caption></xmp></td>
-             </tr>
-             <tr>
-              <td>Iframes</td>
-              <td>Always use a clear title </td>
-              <td><xmp><iframe title="Code for cards"></xmp></td>
-             </tr>
-            <tr>
-              <td>Forms</td>
-              <td>Dealt with in detail in <a href="forms.html">Forms</a> section </td>
-                <td><a href="forms.html">Navigation guidelines</a></td>
-            </tr>
-            <tr>
-                <td> Audio and Video</pre></td>
-                <td><ul>
-                  <li>Allow usrs to choose their own pace, transcripts and playback controls</li>
-                  <li>Provide options for captions and volume</li>
-                </ul></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Navigation</td>
-                <td>Dealt with in detail in <a href="navigation.html">Navigation</a> section </td>
-                <td><a href="navigation.html">Navigation guidelines</a></td>
-            </tr>
-            <tr>
-              <td>Text</pre></td>
-              <td><ul>
-                <li>Use simple, clear language that is easy to understand</li>
-                <li>Group content and place under headings so users can skim and select</li>
-            
-              </ul> </td>
-              <td>
-                &lt;H1&gt; to &lt;H6&gt; tags
-              
+  <!--https://webaccess.berkeley.edu/resources/tips/web-accessibility-->
+  <div class="content">
+    <section class="card">
+    <h1 class="card2">Accessibility</h1>
+    <h2>Web Accessibility</h2>
+    <p>Websites must be designed so that persons with the following permanent or temporary conditions may access them and have a seamless experience:</p>
+    <ul>
+      <li>Blindness or poor vision</li>
+      <li>Deafness or hearing difficulties</li>
+      <li>Cognitive and learning disabilites</li>
+      <li>Technological disdavantage such as poor Internet or low memory</li>
+      <li>Environment that is not conducive to accessing web content</li>
+    </ul>
 
-                </td>
-          </tr>
-            
-          </table>
-        </section>
-       
-          
-            
-      </article>
+    <br>
+    <div style="overflow-x:auto;">
+    <table title="Designing for Accessibility">
+      <caption><strong>Designing for Accessibility</strong></caption>
+      <tr>
+        <th>Page Element</th>
+        <th>Guidelines for accessibility</th>
+        <th>HTML/ CSS required</th>
+      </tr>
+      <tr>
+       <td>Images</td>
+       <td><ul>
+        <li>Use alt tags for images that describe image if it fails to download or cannot be found</li>
+        <li>Use caption tag to provide image details</li>
+    
+      </ul> </td>
+       <td><xmp><figure>
+      <img  src="red_box.jpg" alt="Red box">
+      <figcaption>Fig.1 - A Red box</figcaption>
+    </figure></xmp>
+
+      </td>
+      </tr>
+      <tr>
+        <td>Tables</td>
+        <td>Always use caption tag</td>
+        <td><xmp><table>
+        <caption>This is a table</caption></xmp></td>
+       </tr>
+       <tr>
+        <td>Iframes</td>
+        <td>Always use a clear title </td>
+        <td><xmp><iframe title="Code for cards"></xmp></td>
+       </tr>
+      <tr>
+        <td>Forms</td>
+        <td>Dealt with in detail in <a href="forms.html">Forms</a> section </td>
+          <td><a href="forms.html">Navigation guidelines</a></td>
+      </tr>
+      <tr>
+          <td> Audio and Video</pre></td>
+          <td><ul>
+            <li>Allow usrs to choose their own pace, transcripts and playback controls</li>
+            <li>Provide options for captions and volume</li>
+          </ul></td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>Navigation</td>
+          <td>Dealt with in detail in <a href="navigation.html">Navigation</a> section </td>
+          <td><a href="navigation.html">Navigation guidelines</a></td>
+      </tr>
+      <tr>
+        <td>Text</pre></td>
+        <td><ul>
+          <li>Use simple, clear language that is easy to understand</li>
+          <li>Group content and place under headings so users can skim and select</li>
       
+        </ul> </td>
+        <td>
+          &lt;H1&gt; to &lt;H6&gt; tags
+        
+
+          </td>
+    </tr>
       
+    </table>
+  </div>
+  </section>
+  <footer class="card"><img src="images/CC Logo.jpg" alt="Caribbean Chef Logo"/> 
+    <a href="support.html">Support</a>
+    <a href="website.html">Website</a>
+    
+  </footer>
+</div>
 
 
-    </main>
-    <footer><img src="images/CC Logo.jpg" alt="Caribbean Chef Logo"/> <p><a href="support.html">Support</a>
-      <a href="website.html">Website</a></p></footer>
-    <script>
-      /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict 
-      Source for javascript dropdown menu buttons Dropdown button https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_sidenav_dropdown*/
-      var dropdown = document.getElementsByClassName("dropdown-btn");
-      var i;
-      
-      for (i = 0; i < dropdown.length; i++) {
-        dropdown[i].addEventListener("click", function() {
-          this.classList.toggle("active");
-          var dropdownContent = this.nextElementSibling;
-          if (dropdownContent.style.display === "block") {
-            dropdownContent.style.display = "none";
-          } else {
-            dropdownContent.style.display = "block";
-          }
-        });
+
+<script>
+  /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict 
+  Source for javascript dropdown menu buttons Dropdown button https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_sidenav_dropdown*/
+  var dropdown = document.getElementsByClassName("dropdown-btn");
+  var i;
+  
+  for (i = 0; i < dropdown.length; i++) {
+    dropdown[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var dropdownContent = this.nextElementSibling;
+      if (dropdownContent.style.display === "block") {
+        dropdownContent.style.display = "none";
+      } else {
+        dropdownContent.style.display = "block";
       }
-
-      function copyText() {
-      
-      /* Copy text into clipboard */
-      navigator.clipboard.writeText
-          ("Geeksforgeeks is best learning platform.");
+    });
   }
-      </script>
-      
-      
-  </body>
-  </html>
+  </script>
+</body>
+</html>
