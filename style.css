@@ -53,17 +53,20 @@ h1 {
   .dropdown-container {
     display:none;
     background-color: #ffffed;
-    padding: 6px 8px 6px 16px;
-    text-align: left;
-    font-size: 1.5rem;
+    padding: 6px 12px 6px 1px;
+    font-style: italic;
+    font-size: 1.0rem;
+    background: none;
   }
   
   .dropdown-active {
     display:block;
     background-color: #ffffed;
-    padding: 6px 8px 6px 16px;
-    text-align: left;
-    font-size: 1.5rem;
+    padding: 6px 12px 6px 1px;
+    text-align: center;
+    font-style: italic;
+    font-size: 1.0rem;
+    background: none;
   }
   
   
@@ -71,6 +74,7 @@ h1 {
   .sidebar a.active {
     background-color: #FF8000;
     color: white;
+    
   }
   
   /* Links on mouse-over */
