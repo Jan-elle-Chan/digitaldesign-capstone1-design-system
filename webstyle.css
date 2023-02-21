@@ -225,7 +225,8 @@ padding: 10px;
 
 @media screen and (max-width: 600px) {
   .topnav.responsive {position: relative;}
-  .topnav.responsive .icoposition: absolute;
+  .topnav.responsive .icon {
+    position: absolute;
     right: 0;
     top: 0;
   }
@@ -234,8 +235,7 @@ padding: 10px;
     display: block;
     text-align: centre;
   }
-
-
+}
 
 button {
         display: inline-block;
