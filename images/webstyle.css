@@ -132,26 +132,25 @@ button {
   text-align: left;
 }
 
-.flex-item{
+.flex-item-left {
   background-color: #FAFBF7;
   padding: 10px;
-  flex-grow: 1;
+  flex: 50%;
   margin:5px;
 }
 
-.card{
+.flex-item-right {
   background-color: #FAFBF7;
   padding: 10px;
-  
-  margin:5px;
+  flex: 50%;
+   margin:5px;
 }
 
-div img {
+.center {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 100%;
-  height:auto;
+  width: 50%;
 }
 
 /* Responsive layout - makes a one column-layout instead of two-column layout */
