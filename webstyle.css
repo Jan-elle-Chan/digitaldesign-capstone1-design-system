@@ -51,7 +51,7 @@ button {
 
 .inactive-button{
   background-color: #F0DECB;
-  border:none;
+  border:grey;
   color:grey;
 }
 
