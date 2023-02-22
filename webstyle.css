@@ -12,7 +12,7 @@ text-align: center;
 color: white;
 padding: 10px;
  margin:5px;
- height:20VH;
+ height:30VH;
 }
 
 h1 {
@@ -31,12 +31,14 @@ body{
 
 button {
   display: inline-block;
-  padding: 20px;
+  padding: 10px;
   width: 150px;
-  font-size:18px; 
+  height:50px;
+  font-size:14px; 
   border-radius:50px;
   text-align: center;
 }
+
 
 .active1-button{
   background-color: #FF8000;
@@ -55,7 +57,29 @@ button {
   color:grey;
 }
 
-
+/*Breadcrumbs*/
+ul.breadcrumb {
+  padding: 10px 16px;
+  list-style: none;
+  background-color: #eee;
+}
+ul.breadcrumb li {
+  display: inline;
+  font-size: 12px;
+}
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+}
+ul.breadcrumb li a {
+  color: #0275d8;
+  text-decoration: none;
+}
+ul.breadcrumb li a:hover {
+  color: #01447e;
+  text-decoration: underline;
+}
 /* ----- carousel content stylings ----- */
         /* places the carousel content on center of the carousel */
         .carousel-content {
