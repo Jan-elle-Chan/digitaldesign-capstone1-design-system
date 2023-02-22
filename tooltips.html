@@ -3,111 +3,123 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><!--Makes page responsive-->
-    <title>Components-Tooltips</title>
+    <title>Tooltips</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
   </head>
-  <body>
-    <header class="header-bgcolor">
-      
-      <h1> Components</h1>
-    </header>
-  <main class="main">
-    <nav class="sidebar">
-      <a href="index.html">Home</a>
-      <div class="dropdown-btn">Style</div>
-        <div class="dropdown-container">
-          <a href="typography.html">Typography</a>
-          <a href="colour.html">Colour</a>
-          <a href="spacing.html">Spacing</a>
-          <a href="imagepage.html">Images</a>
-        </div>
-      <div class="dropdown-btn">Layout</div>
-        <div class="dropdown-container">
-          <a href="responsive.html">Responsive Design</a>
-          <a href="accessibility.html">Accessibility</a>
-        </div>
-        <div class="dropdown-btn">Navigation</div>
-        <div class="dropdown-container">
-          <a href="navigationbar.html">Navigation Bar</a>
-          <a href="buttonpage.html">Buttons</a>
-        </div>
-        <div class="dropdown-btn">Components</div>
-        <div class="dropdown-container">
-          <a href="tooltips.html">Tooltips</a>
-          <a href="form.html">Forms</a>
-          <a href="cards.html">Cards</a>
-          <a href="carousel.html">Carousel</a>
-          <a href="tables.html">Tables</a>
-        </div>
-      </nav>
-      <article class="flex-container">
-        <section class="card">
-          <h2>Tooltips</h2>
-          <p>Tooltips are used to provide information to the user about the purpose of an element or to indicate that an action is about to be cmpleted or has been completed. </p>
-          <p>For example, a tooltip can be placed over a button to indicate that the user can clear form contents </p>
-          <p> The tooltip should:
-            <ul>
-              <li>Appear next to the element so that it does not cover important content, use styles </li>
-              <li>Be used only as needed</li>
-              <li>Contain brief instructions, up to five words</li>
-            </ul>
-          </p>
-        </section>
-       
-          <section class="card">
-            <div class="elementcode-card">
-            <h3>Tooltips over text Codepen</h3>
-            <!--https://blog.hubspot.com/website/html-tooltip-->
-            <iframe height="300" style="width: 100%;" scrolling="no" title="Tooltips" src="https://codepen.io/Jan-elle-Chan/embed/preview/GRBepvr?default-tab=html&theme-id=light" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-              See the Pen <a href="https://codepen.io/Jan-elle-Chan/pen/GRBepvr">
-              Tooltips</a> by Jan-elle-Chan (<a href="https://codepen.io/Jan-elle-Chan">@Jan-elle-Chan</a>)
-              on <a href="https://codepen.io">CodePen</a>.
-            </iframe>
-            </div>
+<body>
+ 
 
-            <div class="elementcode-card">
-              <h3>Tooltips on buttons</h3>
-              <!--https://blog.hubspot.com/website/html-tooltip-->
-              <iframe height="300" style="width: 100%;" scrolling="no" title="Tooltips on buttons" src="https://codepen.io/Jan-elle-Chan/embed/preview/abjMvrO?default-tab=html&theme-id=light" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-                See the Pen <a href="https://codepen.io/Jan-elle-Chan/pen/abjMvrO">
-                Tooltips on buttons</a> by Jan-elle-Chan (<a href="https://codepen.io/Jan-elle-Chan">@Jan-elle-Chan</a>)
-                on <a href="https://codepen.io">CodePen</a>.
-              </iframe>
-              </div>
-            
-        </section>
-        <!--End of section Tooltips-->
+<!-- The sidebar -->
+<nav class="sidebar">
+  <a href="index.html">Home</a>
+    <div class="dropdown-btn">Style</div>
+      <div class="dropdown-container">
+        <a href="typography.html">Typography</a>
+        <a href="colour.html">Colour</a>
+        <a href="spacing.html">Spacing</a>
+        <a href="imagepage.html">Images</a>
+      </div>
+    <div class="dropdown-btn">Layout</div>
+      <div class="dropdown-container">
+        <a href="responsive.html">Responsive Design</a>
+        <a href="accessibility.html">Accessibility</a>
+      </div>
+    <div class="dropdown-btn">Navigation</div>
+      <div class="dropdown-container">
+        <a href="navigationbar.html">Navigation Bar</a>
+        <a href="buttonpage.html">Buttons</a>
+      </div>
+    <div class="dropdown-btn">Components</div>
+      <div class="dropdown-container">
+        <a href="tooltips.html">Tooltips</a>
+        <a href="form.html">Forms</a>
+        <a href="cards.html">Cards</a>
+        <a href="carousel.html">Carousel</a>
+        <a href="tables.html">Tables</a>
+      </div>
+</nav>
 
-        
-      </article>
-      
-      
+<!-- Page content -->
 
 
-    </main>
-    <footer><img src="images/CC Logo.jpg" alt="Caribbean Chef Logo"/></footer>
-    <script>
-      /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict 
-      Source for javascript dropdown menu buttons Dropdown button https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_sidenav_dropdown*/
-      var dropdown = document.getElementsByClassName("dropdown-btn");
-      var i;
+<div class="content">
+  <h1 class="card2">Tooltips</h1>
+  <section class="card">
+    <h2>Guidelines</h2>
+    <p>Tooltips are used to provide information to the user about the purpose of an element or to indicate that an action is about to be cmpleted or has been completed. </p>
+    <p>For example, a tooltip can be placed over a button to indicate that the user can clear form contents </p>
+    <p> The tooltip should:
+      <ul>
+        <li>Appear next to the element so that it does not cover important content, use styles </li>
+        <li>Be used only as needed</li>
+        <li>Contain brief instructions, up to five words</li>
+      </ul>
+    </p>
+  </section>
+
+  <section class="card">
+    <h3>Tooltips over text</h3>
+    <figure>
+      <img src="images/tooltips-text.jpg" alt="Image of tooltips over text">
+      <figcaption><em><small>Tooltips over text, bottom and left</em></small>
+      </figcaption>
+    </figure>
+    <h3>Codepen</h3>
+    <!--https://blog.hubspot.com/website/html-tooltip-->
+    <iframe height="300" style="width: 100%;" scrolling="no" title="Tooltips" src="https://codepen.io/Jan-elle-Chan/embed/preview/GRBepvr?default-tab=html&theme-id=light" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+      See the Pen <a href="https://codepen.io/Jan-elle-Chan/pen/GRBepvr">
+      Tooltips</a> by Jan-elle-Chan (<a href="https://codepen.io/Jan-elle-Chan">@Jan-elle-Chan</a>)
+      on <a href="https://codepen.io">CodePen</a>.
+    </iframe>
+  </section>
+<!--End of section Tooltips Text-->
+  <section class="card">
+    <h3>Tooltips over buttons</h3>
+    <figure>
+      <img src="images/tooltips-buttons.jpg" alt="Image of tooltips over buttons">
+      <figcaption><em><small>Tooltips over text, bottom and right</em></small>
+      </figcaption>
+    </figure>
+      <h3>Codepen</h3>
+      <!--https://blog.hubspot.com/website/html-tooltip-->
+      <iframe height="300" style="width: 100%;" scrolling="no" title="Tooltips on buttons" src="https://codepen.io/Jan-elle-Chan/embed/preview/abjMvrO?default-tab=html&theme-id=light" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+        See the Pen <a href="https://codepen.io/Jan-elle-Chan/pen/abjMvrO">
+        Tooltips on buttons</a> by Jan-elle-Chan (<a href="https://codepen.io/Jan-elle-Chan">@Jan-elle-Chan</a>)
+        on <a href="https://codepen.io">CodePen</a>.
+      </iframe>
       
-      for (i = 0; i < dropdown.length; i++) {
-        dropdown[i].addEventListener("click", function() {
-          this.classList.toggle("active");
-          var dropdownContent = this.nextElementSibling;
-          if (dropdownContent.style.display === "block") {
-            dropdownContent.style.display = "none";
-          } else {
-            dropdownContent.style.display = "block";
-          }
-        });
+    
+</section>
+<!--End of section Tooltips Buttons-->
+  <footer class="card"><img src="images/CC Logo.jpg" alt="Caribbean Chef Logo"/> 
+    <a href="support.html">Support</a>
+    <a href="website.html">Website</a>
+    
+  </footer>
+</div>
+
+
+
+<script>
+  /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict 
+  Source for javascript dropdown menu buttons Dropdown button https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_sidenav_dropdown*/
+  var dropdown = document.getElementsByClassName("dropdown-btn");
+  var i;
+  
+  for (i = 0; i < dropdown.length; i++) {
+    dropdown[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var dropdownContent = this.nextElementSibling;
+      if (dropdownContent.style.display === "block") {
+        dropdownContent.style.display = "none";
+      } else {
+        dropdownContent.style.display = "block";
       }
-      </script>
-      
-      
-  </body>
-  </html>
+    });
+  }
+  </script>
+</body>
+</html>
