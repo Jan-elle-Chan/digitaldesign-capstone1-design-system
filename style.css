@@ -20,7 +20,7 @@ body{
 h1 {
   text-align: center;
   font-size: 5.0rem;
-  color: black;
+  color: #000;
   font-family: 'Courgette', cursive
 }
 
@@ -39,7 +39,7 @@ h1 {
   .dropdown-btn,
   .sidebar a {
     display: block;
-    color: black;
+    color: #000;
     padding: 16px;
     text-decoration: none;
     background-color: #ffffd5;
@@ -73,7 +73,7 @@ h1 {
   /* Active/current link */
   .sidebar a.active {
     background-color: #FF8000;
-    color: white;
+    color: #FFFFFF;
     
   }
   
@@ -82,7 +82,7 @@ h1 {
   footer a:hover,
   .sidebar a:hover:not(.active) {
     background-color: #FFCC99;
-    color: black;
+    color: #000;
   }
   
   /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
@@ -99,7 +99,7 @@ h1 {
   }
   
   .card {
-    background-color: white;
+    background-color: #FFFFFF;
     border-radius: 5px;
     padding: 20px;
     margin: 5px;
@@ -129,19 +129,19 @@ h1 {
     border-collapse: collapse;
     border: 1px solid black;
     text-align: left;
-    vertical-align: middle;
-    width:100%
-    /*margin-left:auto;
-    margin-right:auto;*/
+    width:80%;
+    margin-left:auto;
+    margin-right:auto;
   }
   
   thead {
-    background-color: darkgrey;
+    background-color:#F0DECB;
+    ;
   
   }
   th, td {
     border-collapse: collapse;
-    border: 1px solid black;
+    border: 1px solid #000;
     padding: 8px;
   }
 
@@ -169,6 +169,47 @@ h1 {
     
   }
   
+  /*Colours*/
+
+  .header-bgcolor{
+    background-color: rgb(53, 95, 185);
+  }
+  .sidenav-bgcolor{
+    background-color:#ffffed;
+  }
+  
+  .body-bgcolor{
+    background-color:  #ffffed;
+  }
+  .cards-bgcolor{
+    background-color: #FFFFFF;
+  }
+  
+  .active1-bgcolor{
+    background-color: #FF8000;
+  }
+  .active2-bgcolor{
+    background-color: #FFCC99;
+  }
+  .active-border{
+    background-color: #331900;
+  }
+  
+  .inactive-bgcolor{
+    background-color: #F0DECB;
+  
+  }
+  
+  .inactive-border{
+    background-color:  #808080;
+  }
+
+  .inactive-font{
+    background-color: #808080;
+  }
+  .font{
+    background-color: black;
+  }
   
   /* On screens that are less than 700px wide, make the sidebar into a topbar */
   @media screen and (max-width: 700px) {
