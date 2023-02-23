@@ -13,6 +13,7 @@ body{
   line-height: 3rem;
   height:100%;
   width:100%;
+  color:#000;
   background-color: #ffffed;
   
 }
@@ -21,10 +22,16 @@ h1 {
   text-align: center;
   font-size: 5.0rem;
   line-height: 7rem;
-  color: #000;
+  color: #000;/*#ffffff, alternative white*/
   font-family: 'Courgette', cursive
 }
 
+
+h2, h3, h4, h5, h6{
+  text-align: left;
+  color: #000;
+  font-family: "Helveltica", sans-serif;
+}
 
 .sidebar {
     margin: 0;
@@ -152,7 +159,7 @@ button{
     border-collapse: collapse;
     border: 1px solid black;
     text-align: left;
-    width:80%;
+    width:100%;
     margin-left:auto;
     margin-right:auto;
   }
@@ -196,8 +203,13 @@ button{
   /*Colours*/
 
   .header-bgcolor{
-    background-color: rgb(53, 95, 185);
+    background-color: #355FB9;
   }
+
+  .success-bgcolor{
+    background-color: #4007a3;
+  }
+
   .sidenav-bgcolor{
     background-color:#ffffed;
   }
@@ -209,6 +221,9 @@ button{
     background-color: #FFFFFF;
   }
   
+  .warning-bgcolor{
+    background-color: #FF4000;
+  }
   .active1-bgcolor{
     background-color: #FF8000;
   }
