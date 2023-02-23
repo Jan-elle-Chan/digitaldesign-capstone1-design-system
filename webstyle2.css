@@ -35,6 +35,33 @@ body{
   flex-direction: column;
   background-color: #308d46;
 }
+
+.flex-item-nav{
+  padding:10px;
+  margin: 10px;
+  text-align: center;
+  justify-content: space-around;
+  width: 20%;
+}
+
+nav ul{
+  list-style-type: none;
+  overflow: auto;
+  margin:0;
+  display: none;
+  flex-direction: column;
+}
+
+a{
+  text-decoration: none ;
+}
+
+nav li a {
+  display:inline-block;
+  text-decoration: none;
+  color: #FF8000;
+}
+
 button {
   display: inline-block;
   padding: 10px;

@@ -15,22 +15,25 @@
   
 <header>
 <h1>Caribbean Chef</h1>
-<nav class="topnav" id="myTopnav">
-  <a href="#home" class="active">Home</a>
-  <a href="#classes">Classes</a>
-  <a href="#products">Products</a>
-  <a href="#about">Recipes</a>
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+<nav class="flex-container">
+  <div class="menu-label">Menu</div>
+  <ul>
+  <li class="flex-item-nav"><a href="#home" class="active">Home</a></li>
+  <li class="flex-item-nav"><a href="#classes">Classes</a></li>
+  <li class="flex-item-nav"><a href="#products">Products</a></li>
+  <li class="flex-item-nav"><a href="#about">Recipes</a></li>
+  <a class="toggle" onclick="showNav()">
     <i class="fa fa-bars"></i>
   </a>
+</ul>
 </nav>
 
-<ul class="breadcrumb">
+<!--<ul class="breadcrumb">
   <li><a href="#">Home</a></li>
   <li><a href="#">Pictures</a></li>
   <li><a href="#">Summer 15</a></li>
   <li>Italy</li>
-</ul>
+</ul>-->
 </header>
 
 <article class="flex-container">
