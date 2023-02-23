@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
-    <link rel="stylesheet" href="webstyle2.css" />
+    <link rel="stylesheet" href="webstyle.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
@@ -15,17 +15,18 @@
   
 <header>
 <h1>Caribbean Chef</h1>
-<nav class="flex-container">
+<nav class="flex-container nowrap">
   <div class="menu-label">Menu</div>
-  <ul>
+  <ul id="nav-items">
   <li class="flex-item-nav"><a href="#home" class="active">Home</a></li>
   <li class="flex-item-nav"><a href="#classes">Classes</a></li>
   <li class="flex-item-nav"><a href="#products">Products</a></li>
   <li class="flex-item-nav"><a href="#about">Recipes</a></li>
+  </ul>
   <a class="toggle" onclick="showNav()">
     <i class="fa fa-bars"></i>
   </a>
-</ul>
+
 </nav>
 
 <!--<ul class="breadcrumb">

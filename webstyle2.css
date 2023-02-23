@@ -44,6 +44,10 @@ body{
   width: 20%;
 }
 
+.nowrap{
+  flex-wrap: nowrap;
+}
+
 nav ul{
   list-style-type: none;
   overflow: auto;
@@ -60,6 +64,20 @@ nav li a {
   display:inline-block;
   text-decoration: none;
   color: #FF8000;
+}
+
+nav .menu-label {
+  display: none;
+}
+
+nav .toggle{
+  align-self: flex-end;
+  position: absolute;
+  cursor: pointer;
+}
+
+.show-items{
+  display: flex;
 }
 
 button {
