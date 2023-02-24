@@ -33,8 +33,16 @@ html{
   
   .flex-container{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     background-color: #308d46;
+  }
+
+  .flex-item-nav{
+    padding:10px;
+    margin: 10px;
+    text-align: center;
+    justify-content: space-between;
+    width: 20%;
   }
 
 .topnav {
@@ -139,5 +147,10 @@ html{
     width: 100%;
     align-self:middle;
     text-align: center;
+  }
+  .flex-container{
+    display: flex;
+    flex-direction: column;
+    background-color: #308d46;
   }
 }
