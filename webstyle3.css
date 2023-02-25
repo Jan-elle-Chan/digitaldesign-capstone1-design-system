@@ -2,6 +2,7 @@
 html{
     font-size: 62.5%;
   }
+
   * {
     box-sizing: border-box;
   }
@@ -12,7 +13,7 @@ html{
     color: white;
     padding: 10px;
     margin:auto;
-    height:20VH;
+    height:20%;
     background-image: url("images/background2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -35,11 +36,12 @@ html{
 
 
   body{
+    
     font-family: "Helveltica", sans-serif;
     font-size: 2rem;
     line-height: 3rem;
-    height:auto;
-    width:auto;
+    height:100%;
+    width:100%;
     color:#000;
     background-color: #ffffed;
     margin: 0;
@@ -66,6 +68,14 @@ html{
     overflow: auto;
     align-self: center;
    
+  }
+
+  .two-column{
+    width:50%;
+  }
+
+  .three-column{
+     width:33%;
   }
 
 .topnav {
@@ -167,10 +177,73 @@ html{
   display: block;
 }
 
+/* ----- carousel content stylings ----- */
+        /* places the carousel content on center of the carousel */
+        .carousel-content {
+          position: absolute;
+          /*to center the content horizontally and vertically*/
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%); 
+          text-align: center;
+          z-index: 50;
+      }
+      .carousel-heading {
+          font-size: 3rem;
+          color: #308d46;
+          margin-bottom: 1rem;
+      }
+      /*----- end of carousel content stylings ----- */
 
+      /* ----- slideshow stylings ----- */
+      .slideshow {height: 100%;
+          overflow: hidden; /* to hide slides in x-direction */
+          position: relative;
+      }
+      /* wrapper which wraps all the slideshow images stylings */
+      .slideshow-wrapper {
+          display: flex;
+          /* We give it width as 400% because we are making a 
+             4 image carousel. If you want to make for example, 
+             5 images carousel, then give width as 500%. */
+          width: 400%;
+          height: 100%;
+          position: relative;
+          /* you can change the animation settings from below */
+          animation: slideshow 20s infinite;
+        }
+      /* define width and height for images*/
+      .slide {
+          width: 100%;
+          height: 100%;
+      }
+      .slide-img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; 
+      }
+      /* @keyframes are used to provide animations
+         We make these settings for 4 image carousel.
+         Make modification according to your needs. */
+      @keyframes slideshow {
+          0%  { left: 0; }
+          10% { left: 0; }
+          15% { left: -100%; }
+          25% { left: -100%; }
+          30% { left: -200%; }
+          40% { left: -200%; }
+          45% { left: -300%; }
+          55% { left: -300%; }
+          60% { left: -200%; }
+          70% { left: -200%; }
+          75% { left: -100%; }
+          85% { left: -100%; }
+          90% { left: 0%; }
+      }
+/* ----- end of slideshow stylings ----- */
 /*footer styles*/
 footer {
-  height: 10vh;
+  height: 10%;
   position: fixed;
   left: 0;
   bottom: 0;
@@ -232,6 +305,9 @@ footer a{
     
   }
 
+  .card{
+    width:100%;
+  }
   h1 {
     
     font-size: 5.0rem;
