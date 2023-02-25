@@ -27,7 +27,9 @@ html{
     font-family: 'Courgette', cursive
   }
   
-  
+  h2{
+    font-size: 3.0rem;
+  }
   h2, h3, h4, h5, h6{
     text-align: left;
     color: #000;
@@ -241,6 +243,66 @@ html{
           90% { left: 0%; }
       }
 /* ----- end of slideshow stylings ----- */
+
+ /* ----- carousel control buttons stylings ----- */
+ .slide-btn {
+  background-color: #FFCC99;
+  border-radius: 50%;
+  border: .2rem solid #331900;
+  width: 1.2rem;
+  height: 1.2rem;
+  outline: none;
+  cursor: pointer;
+  /* stylings for positioning the buttons at
+     the bottom of the carousel */
+  position: absolute;
+  bottom: 3%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 70;
+}
+/* As we provide position as absolute, 
+the buttons places one over the other. 
+So, we have to place them individually
+at their correct positions. */
+.slide-btn-1 {
+  left: 45%;
+}
+.slide-btn-2 {
+  left: 50%;
+}
+.slide-btn-3 {
+  left: 55%;
+}
+.slide-btn-4 {
+  left: 60%;
+}
+/* When we focus on the particular button, 
+the animation stops to that particular image 
+to which the button is associated. */
+.slide-btn-1:focus~.slideshow-wrapper {
+  animation: none;
+  left: 0;
+}
+.slide-btn-2:focus~.slideshow-wrapper {
+  animation: none;
+  left: -100%;
+}
+.slide-btn-3:focus~.slideshow-wrapper {
+  animation: none;
+  left: -200%;
+}
+.slide-btn-4:focus~.slideshow-wrapper {
+  animation: none;
+  left: -300%;
+}
+/* when we focus on the button, the background color changes */
+.slide-btn:focus {
+  background-color: #FF8000;
+}
+/* ----- end of carousel control buttons stylings ----- */
+
+
 /*footer styles*/
 footer {
   height: 10%;
