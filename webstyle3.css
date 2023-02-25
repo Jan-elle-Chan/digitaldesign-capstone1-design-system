@@ -13,13 +13,17 @@ html{
     padding: 10px;
     margin:auto;
     height:20VH;
+    background-image: url("images/background2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   }
   
   h1 {
     text-align: center;
     font-size: 5.0rem;
     color: black;
-    font-family: 'Courgette', cursive
+    font-family: 'Courgette', cursive;
+    padding:16px;
   }
   
   body{
