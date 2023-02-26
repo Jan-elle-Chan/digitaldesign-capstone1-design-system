@@ -34,33 +34,57 @@
 </nav>
 
 <main class="flex-container">
-<section class="card two-column">
-  <h2>Who Are We?</h2>
-  <p>Caribbean Chef was launched in 2021 by Chef Mark in Vancouver. Chef Mark moved to Vacouver from the Caribbean when he was just 14 years old and has always loved cooking. Finding the right ingredients for Caribbean inspired food was always a challenge and as love for Carbbean food grew in Vancouver, he developed a line of products and cooking classes to fill that need.</p>
-  <p>Hover over the dropdown button to open the dropdown menu.</p>
 
-
-</section>
 <!--https://www.w3schools.com/html/html_form_elements.asp-->
 <section class="card two-column">
     <h2>Responsive Topnav with Dropdown</h2>
-    <form action="/action_page.php">
-      <label for="oneday">Choose a class:</label>
-      <select id="oneday" name="cars">
-        <option value="curry">Curry</option>
-        <option value="stew">Stews</option>
-        <option value="bread">Breads</option>
-        <option value="appetizer">Appetizers</option>
-      </select>
+    <form method="post" 
+  action="https://learndigital.dev/DGL103/dgl103-form.php">
+<div class="col-25">
+  <label for="oneday">Class:</label>
+</div>
+  <div class="col-75">
+    <select id="oneday" name="cars">
+      <option value="curry">Curry</option>
+      <option value="stew">Stews</option>
+      <option value="bread">Breads</option>
+      <option value="appetizer">Appetizers</option>
+    </select>
+  </div>
 <br>
-        <label for="fname">First name:</label>
-        <input type="text" id="fname" name="fname" value="John"><br>
-        <label for="lname">Last name:</label>
-        <input type="text" id="lname" name="lname" value="Doe"><br>
-        <input type="submit" value="Submit">
-      
-      
-    </form>
+  <div class="col-25">
+    <label for="fname">First name:</label>
+  </div>
+  <div class="col-75">
+    <input type="text" id="fname" name="fname" placeholder="John">
+  </div>
+  <br>
+  <div class="col-25">
+    <label for="lname">Last name:</label>
+  </div>
+  <div class="col-75">
+    <input type="text" id="lname" name="lname" placeholder="Doe">
+  </div>
+  <br>
+  <div class="col-25">
+    <label for="email">Email:<span class="label-required">* (required)</span>       </label>
+  </div>
+  <div class="col-75">
+    <input type="email" id="email" name="email" placeholder="johndoe@gmail.com">
+  </div>
+  <br>
+  <div class="col-25">
+    <label for="message">Message</label>
+  </div>
+  <div class="col-75">
+    <textarea id="message" name="message" placeholder="Please write any questions or comments" style="height:200px"></textarea>
+  </div>
+  <br>
+  <div class="col-75">
+  <input class= "button active2-button" type="reset" value="Reset">
+  <input class= "button active1-button" type="submit" value="Submit">
+  </div>
+</form>
     
     
   </section>

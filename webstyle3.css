@@ -130,7 +130,7 @@ html{
   text-align: center;
   margin-left: auto;
   margin-right: auto;
- 
+  cursor:pointer;
 }
 
 button a{
@@ -216,6 +216,65 @@ button a{
 .dropdown:hover .dropdown-container {
   display: block;
 }
+
+/*----- Form styling -----*/
+input, select, textarea{
+  border-radius: 5px;
+  padding:10px;
+  margin:8px;
+  border: 1px solid #331900;
+  width:70%
+}
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+.label-required{
+ color: #FF4000;
+ font-weight:bold;
+ font-style:italic;
+}
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.button {
+  display: inline-block;
+  padding: 20px;
+  width: 150px;
+  font-size:18px; 
+  border-radius:50px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  cursor:pointer;
+ }
+
+
+
+input[type="submit"]:hover,
+input[type="reset"]:hover
+{
+  border:3px;
+  font-weight:bold;
+  border:solid 2px;
+}
+/*----- End of form styling -----*
+
 
 /* ----- carousel content stylings ----- */
         /* places the carousel content on center of the carousel */
