@@ -362,6 +362,54 @@ th:nth-child(even),td:nth-child(even) {
 
 /* ----- end of recipe table stylings ----- */
 
+
+/* ----- tooltip stylings ----- */
+.tooltip-text {
+  visibility: hidden;
+  position: absolute;
+  z-index: 1;
+  width: 100px;
+  color: white;
+  font-size: 12px;
+  font-family: Helveltica, sans-serif;
+  background-color: black;
+  border-radius: 10px;
+  padding: 10px 10px 10px 10px;
+}
+
+.hover-text:hover .tooltip-text {
+  visibility: visible;
+}
+
+.tip-top{
+  top: -40px;
+  left: -50%;
+}
+
+.tip-bottom {
+  top: 25px;
+  left: -50%;
+}
+
+.tip-left {
+  top: -8px;
+  right: 120%;
+}
+
+.tip-right {
+  top: -8px;
+  left: 120%;
+}
+
+.hover-text {
+  position: relative;
+  display: inline-block;
+  margin: 40px;
+  font-family: Helveltica, sans-serif;
+  text-align: center;
+}
+/* ----- end of tooltip stylings ----- */
+
 /*-----footer styles-----*/
 footer {
   height: 10%;
