@@ -121,7 +121,7 @@ html{
 /*button styles*/
 
 
-button {
+.button {
   display: block;
   padding: 20px;
   width: 150px;
