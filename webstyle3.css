@@ -380,6 +380,25 @@ th:nth-child(even),td:nth-child(even) {
 .hover-text:hover .tooltip-text {
   visibility: visible;
 }
+.btn-tip-top{
+  top: -55px;
+  left: 5%;
+}
+
+.btn-tip-bottom {
+  top: 55px;
+  left: 5%;
+}
+
+.btn-tip-left {
+  top: -15px;
+  right: 105%;
+}
+
+.btn-tip-right {
+  top: -10px;
+  left: 105%;
+}
 
 .tip-top{
   top: -40px;
