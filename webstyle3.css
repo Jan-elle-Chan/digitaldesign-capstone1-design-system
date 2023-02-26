@@ -122,7 +122,7 @@ html{
 
 
 .button {
-  display: block;
+  display: inline-block;
   padding: 20px;
   width: 150px;
   font-size:18px; 
