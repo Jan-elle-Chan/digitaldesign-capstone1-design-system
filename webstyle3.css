@@ -337,7 +337,32 @@ to which the button is associated. */
 /* ----- end of carousel control buttons stylings ----- */
 
 
-/*footer styles*/
+/* ----- recipe table stylings ----- */
+table, th, td {
+  border: none;
+  border-collapse: collapse;
+  padding: 5px;
+ }
+
+table {
+  border-collapse: collapse;
+  vertical-align: middle;
+  width:100%;
+ }
+
+
+
+th:nth-child(odd),td:nth-child(odd) {
+  text-align:right;
+  }
+
+th:nth-child(even),td:nth-child(even) {
+  text-align:left;
+  }
+
+/* ----- end of recipe table stylings ----- */
+
+/*-----footer styles-----*/
 footer {
   height: 10%;
   position: fixed;

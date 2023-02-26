@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Home</title>
+<link rel="stylesheet" href="webstyle3.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+    <h1>Caribbean Chef</h1>
+</header>
+<!--https://www.w3schools.com/howto/////////////howto_js_responsive_navbar_dropdown.asp#:~:text=How%20TO%20-%20Responsive%20Navbar%20with%20Dropdown%201,hidden%3B%20%7D%20...%203%20Step%203%29%20Add%20JavaScript%3A-->
+<nav class="topnav" id="myTopnav">
+  <a href="#home">Home</a>
+  <a href="#news">Products</a>
+  <div class="dropdown">
+    <div class="dropbtn">Classes 
+     
+    </div>
+    <div class="dropdown-container">
+      <a href="#">One Day</a>
+      <a href="#">Beginner</a>
+      <a href="#">Advanced</a>
+    </div>
+  </div> 
+  
+  <a href="#about">Recipes</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</nav>
+
+<main class="flex-container">
+<section class="card two-column">
+  <h2>Who Are We?</h2>
+  <p>Caribbean Chef was launched in 2021 by Chef Mark in Vancouver. Chef Mark moved to Vacouver from the Caribbean when he was just 14 years old and has always loved cooking. Finding the right ingredients for Caribbean inspired food was always a challenge and as love for Carbbean food grew in Vancouver, he developed a line of products and cooking classes to fill that need.</p>
+  <table>
+    <tr>
+      <th>Quantity</th>
+      <th>Ingredient</th>
+    </tr>
+    <tr>
+      <td>1 lg bundle</td>
+      <td>dasheen bush</td>
+    </tr>
+    <tr>
+      <td>5 medium</td>
+      <td>ochroes</td>
+    </tr>  
+    <tr>
+      <td>3 medium</td>
+      <td>pimentoes</td>
+    </tr>
+    <tr>
+      <td>1 cup</td>
+      <td>coconut milk</td>
+    </tr>
+    <tr>
+      <td>3 cloves </td>
+      <td>garlic</td>
+    </tr>
+    <tr>
+      <td>1 tbsp </td>
+      <td>salt</td>
+    </tr>
+    <tr>
+      <td>1 large </td>
+      <td>scotch bonnet pepper</td>
+    </tr>
+  </table>      
+
+
+</section>
+<section class="card two-column">
+    <h2>Responsive Topnav with Dropdown</h2>
+    
+    <div class="slideshow">
+        <!-- carousel control buttons -->
+        <button class="slide-btn slide-btn-1"></button>
+        <button class="slide-btn slide-btn-2"></button>
+        <button class="slide-btn slide-btn-3"></button>
+        <button class="slide-btn slide-btn-4"></button>
+        <!-- carousel wrapper which contains all images -->
+        <div class="slideshow-wrapper">
+            <div class="slide">
+                <img class="slide-img" src="images/Pie1.jpg">
+            </div>
+           <div class="slide">
+                <img class="slide-img" src="images/Roti.jpg">
+            </div>
+            <div class="slide">
+                <img class="slide-img" src="images/RiceBeans1.jpg">
+            </div>
+            <div class="slide">
+                <img class="slide-img" src="images/Phulourie1.jpg">
+            </div>
+        </div>
+    </div>
+  </section>
+</main>
+<footer class="card"><img src="images/CC Logo.jpg" alt="Caribbean Chef Logo"/> 
+  <a href="support.html">Support</a>
+  <a href="website.html">Website</a>
+  
+</footer>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+
+var dropdown = document.getElementsByClassName("dropbtn");
+  var i;
+  
+  for (i = 0; i < dropdown.length; i++) {
+    dropdown[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var dropdownContent = this.nextElementSibling;
+      if (dropdownContent.style.display === "block") {
+        dropdownContent.style.display = "none";
+      } else {
+        dropdownContent.style.display = "block";
+      }
+    });
+  }
+</script>
+
+</body>
+</html>
