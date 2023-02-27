@@ -36,6 +36,9 @@ html{
     font-family: "Helveltica", sans-serif;
   }
 
+  h2.center{
+    text-align: center;
+  }
 
   body{
     
@@ -72,6 +75,10 @@ html{
    
   }
 
+  .center{
+    margin: auto 0;
+
+  }
   .two-column{
     width:50%;
   }
@@ -268,24 +275,8 @@ label {
  font-weight:bold;
  font-style:italic;
 }
-.col-25 {
-  float: left;
-  width: 25%;
-  margin-top: 6px;
-}
 
-.col-75 {
-  float: left;
-  width: 75%;
-  margin-top: 6px;
-}
 
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
 .button {
   display: inline-block;
   padding: 20px;

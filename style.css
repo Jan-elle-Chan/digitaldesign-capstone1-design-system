@@ -224,7 +224,34 @@ h2, h3, h4, h5, h6{
     text-align: center;
   }
 
+ /*----- Form styling -----*/
  
+input, select, textarea{
+  border-radius: 5px;
+  padding:10px;
+  margin:5px;
+  border: 1px solid #331900;
+  width:70%
+}
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+.label-required{
+ color: #FF4000;
+ font-weight:bold;
+ font-style:italic;
+}
+
+
+input[type="submit"]:hover,
+input[type="reset"]:hover
+{
+  font-weight:bold;
+  border:solid 2px;
+}
+/*----- End of form styling -----*/
+
   footer img {
     float: left;
     overflow: auto;
