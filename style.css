@@ -135,6 +135,9 @@ h2, h3, h4, h5, h6{
   .img-medium{
     width: 50%;
     height: auto;
+    align-self:middle;
+    border: 1px solid #331900;
+    border-radius: 7px;
   }
 
   .card2{
