@@ -79,7 +79,14 @@ html{
   .three-column{
      width:33%;
   }
+/*------ Styling for images -----*/
 
+.img-medium{
+  width: 50%;
+  height: auto;
+}
+
+/*----- Styling for navigation -----*/
 .topnav {
   overflow: hidden;
   background-color: #355FB9;
@@ -117,6 +124,31 @@ html{
   overflow: hidden;
 }
 
+/*------ Breadcrumbs -----*/
+ul.breadcrumb {
+  padding: 1px 15px;
+  list-style: none;
+  background-color: #ffffed;
+  margin-top:0;
+}
+
+ul.breadcrumb li {
+  display: inline;
+  font-size: 12px;
+}
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: #000;
+  content: "/\00a0";
+}
+ul.breadcrumb li a {
+  color: #4007a3;
+  text-decoration: none;
+}
+ul.breadcrumb li a:hover {
+  text-decoration: none;
+  font-weight: bold;
+}
 
 /*button styles*/
 

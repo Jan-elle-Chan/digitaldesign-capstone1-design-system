@@ -132,6 +132,11 @@ h2, h3, h4, h5, h6{
     margin-right: auto;
   }
 
+  .img-medium{
+    width: 50%;
+    height: auto;
+  }
+
   .card2{
     background-color: rgb(53, 95, 185);
     border-radius: 5px;
@@ -263,6 +268,9 @@ button{
 
     .flex-container{
       flex-direction: column;
+    }
+    .img-medium{
+      width:100%;
     }
   }
   
