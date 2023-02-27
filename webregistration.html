@@ -16,20 +16,20 @@
 </header>
 <!--https://www.w3schools.com/howto/////////////howto_js_responsive_navbar_dropdown.asp#:~:text=How%20TO%20-%20Responsive%20Navbar%20with%20Dropdown%201,hidden%3B%20%7D%20...%203%20Step%203%29%20Add%20JavaScript%3A-->
 <nav class="topnav" id="myTopnav">
-  <a href="#home">Home</a>
-  <a href="#news">Products</a>
+  <a href="webindex.html">Home</a>
+  <a href="webproducts.html">Products</a>
   <div class="dropdown">
     <div class="dropbtn">Classes 
      
     </div>
     <div class="dropdown-container">
-      <a href="#">One Day</a>
+      <a href="webclass-one.html">One Day</a>
       <a href="#">Beginner</a>
       <a href="#">Advanced</a>
     </div>
   </div> 
   
-  <a href="#about">Recipes</a>
+  <a href="webrecipes.html">Recipes</a>
   <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
 </nav>
 
@@ -39,52 +39,63 @@
 <section class="card two-column">
     <h2>Responsive Topnav with Dropdown</h2>
     <form method="post" 
-  action="https://learndigital.dev/DGL103/dgl103-form.php">
-<div class="col-25">
-  <label for="oneday">Class:</label>
-</div>
-  <div class="col-75">
-    <select id="oneday" name="cars">
-      <option value="curry">Curry</option>
-      <option value="stew">Stews</option>
-      <option value="bread">Breads</option>
-      <option value="appetizer">Appetizers</option>
-    </select>
-  </div>
-<br>
-  <div class="col-25">
-    <label for="fname">First name:</label>
-  </div>
-  <div class="col-75">
-    <input type="text" id="fname" name="fname" placeholder="John">
-  </div>
-  <br>
-  <div class="col-25">
-    <label for="lname">Last name:</label>
-  </div>
-  <div class="col-75">
-    <input type="text" id="lname" name="lname" placeholder="Doe">
-  </div>
-  <br>
-  <div class="col-25">
-    <label for="email">Email:<span class="label-required">* (required)</span>       </label>
-  </div>
-  <div class="col-75">
-    <input type="email" id="email" name="email" placeholder="johndoe@gmail.com">
-  </div>
-  <br>
-  <div class="col-25">
-    <label for="message">Message</label>
-  </div>
-  <div class="col-75">
-    <textarea id="message" name="message" placeholder="Please write any questions or comments" style="height:200px"></textarea>
-  </div>
-  <br>
-  <div class="col-75">
-  <input class= "button active2-button" type="reset" value="Reset">
-  <input class= "button active1-button" type="submit" value="Submit">
-  </div>
-</form>
+    action="https://learndigital.dev/DGL103/dgl103-form.php">
+    <table>
+    <tr>
+  <td>
+    <label for="oneday">Class:</label>
+  </td>
+    <td>
+      <select id="oneday" name="cars">
+        <option value="curry">Curry</option>
+        <option value="stew">Stews</option>
+        <option value="bread">Breads</option>
+        <option value="appetizer">Appetizers</option>
+      </select>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <label for="fname">First name:</label>
+    </td>
+    <td>
+      <input type="text" id="fname" name="fname" placeholder="John">
+    </td>
+   </tr>
+  <tr>
+   <td>
+      <label for="lname">Last name:</label>
+    </td>
+   <td>
+      <input type="text" id="lname" name="lname" placeholder="Doe">
+    
+    </td>
+  </tr>
+  <tr>
+   <td>
+      <label for="email">Email:<span class="label-required">* (required)</span></label>
+    </td>
+   <td>
+      <input type="email" id="email" name="email" placeholder="johndoe@gmail.com">
+    </td>
+  </tr>
+    <tr>
+    <td>
+      <label for="message">Message</label>
+    </td>
+   <td>
+      <textarea id="message" name="message" placeholder="Please any questions or comments" style="height:200px"></textarea>
+    </td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>
+    <input class= "button active2-button" type="reset" value="Reset">
+    <input class= "button active1-button" type="submit" value="Submit">
+      </td>
+    </tr>
+  </table>
+  </form>
     
     
   </section>
