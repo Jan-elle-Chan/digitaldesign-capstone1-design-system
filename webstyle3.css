@@ -150,9 +150,7 @@ ul.breadcrumb li a:hover {
   font-weight: bold;
 }
 
-/*button styles*/
-
-
+/*----- Styling for buttons -----*/
 .button {
   display: inline-block;
   padding: 20px;
@@ -165,29 +163,33 @@ ul.breadcrumb li a:hover {
   cursor:pointer;
 }
 
-button a{
+
+.button a{
   text-decoration: none;
   color:black}
 
 .active1-button{
   background-color: #FF8000;
-  border-color: #331900;
+  border: 1px solid #331900;
 }
 
 .active2-button{
   background-color: #FFCC99;
-  border-color: #331900;
+  border: 1px solid #331900;
 }
 
 
 .inactive-button{
   background-color: #F0DECB;
-  border:grey;
-  color:grey;
+  border:1px solid #808080;
+  color:#808080;
 }
 
-
-
+.active1-button:hover,
+.active2-button:hover{
+  font-weight: bold;
+  border: solid 2px #331900;
+}
 
 .dropdown .dropbtn {
   font-size: 17px;    
@@ -301,7 +303,6 @@ label {
 input[type="submit"]:hover,
 input[type="reset"]:hover
 {
-  border:3px;
   font-weight:bold;
   border:solid 2px;
 }

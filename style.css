@@ -153,15 +153,47 @@ h2, h3, h4, h5, h6{
    
   }
 
-button{
-  display: inline-block;
-  padding: 10px;
-  width: 150px;
-  height:50px;
-  font-size:14px; 
-  border-radius:50px;
-  text-align: center;
-}
+  /*----- Styling for buttons -----*/
+  .button {
+    display: inline-block;
+    padding: 20px;
+    width: 150px;
+    font-size:18px; 
+    border-radius:50px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    cursor:pointer;
+  }
+  
+  
+  .button a{
+    text-decoration: none;
+    color:black}
+  
+  .active1-button{
+    background-color: #FF8000;
+    border: 1px solid #331900;
+  }
+  
+  .active2-button{
+    background-color: #FFCC99;
+    border: 1px solid #331900;
+  }
+  
+  
+  .inactive-button{
+    background-color: #F0DECB;
+    border:1px solid #808080;
+    color:#808080;
+  }
+  
+  
+  .active1-button:hover,
+  .active2-button:hover{
+    font-weight: bold;
+    border: solid 2px #331900;
+  }
 
   table {
     border-collapse: collapse;
