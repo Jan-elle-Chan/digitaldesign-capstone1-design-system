@@ -87,10 +87,24 @@ html{
      width:33%;
   }
 /*------ Styling for images -----*/
-
+figure a{
+  text-decoration: none;
+  color: #000;
+}
 .img-medium{
   width: 50%;
   height: auto;
+}
+
+img.recipe{
+  width: auto;
+  height:300px;
+  border-radius: 15px;
+  padding:0px;
+  text-align: center;
+  border: solid 1px #331900;
+  margin-left: auto;
+    margin-right: auto;
 }
 
 /*----- Styling for navigation -----*/
