@@ -127,17 +127,19 @@ h2, h3, h4, h5, h6{
     width: 100%;
     height:auto;
     border-radius: 15px;
-    padding:5px;
-    margin-left: auto;
-    margin-right: auto;
+    padding:0px;
+    border: 1px solid #331900;
+   align-self: center;
   }
 
   .img-medium{
     width: 50%;
     height: auto;
-    align-self:middle;
-    border: 1px solid #331900;
-    border-radius: 7px;
+  }
+
+  .img-medium-long{
+    width: 150px;
+    height: auto;
   }
 
   .card2{
