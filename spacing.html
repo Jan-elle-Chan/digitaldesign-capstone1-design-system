@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><!--Makes page responsive-->
-    <title>Typography</title>
+    <title>Spacing</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -49,13 +49,7 @@
   <h1 class="card2">Spacing</h1>
   <section class="card">
     <h2>Guidelines</h2>
-    <p> Typography is important for several reasons, including, but not limited to:
-      <ul>
-        <li>Establishing visual hierarchy</li>
-        <li>Ensures content discovery and readability</li>
-        <li>Branding</li>
-      </ul>
-    </p>
+    
 
     
   </section>
@@ -65,111 +59,93 @@
 
     <table width="100%">
         <tr>
-          <th>Font</th>
-          <th>Use</th>
+          <th>Element</th>
+          <th>Spacing Styles</th>
         </tr>
         <tr>
-         <td>Courgette H1, colour: black or white</td>
+         <td>header</td>
          <td> 
-          padding: 10px;
-          margin:auto;</td>
+          padding: 10px;<br>
+          margin: auto;</td>
         </tr>
         <tr>
-          <td>Helveltica H2</td>
-          <td>To identify sections of content, the section names are enclosed within the H2 tags</td>
+          <td>body</td>
+          <td>margin: 0;</td>
         </tr>
         <tr>
-          <td>Helveltica H3</td>
-          <td>To identify sub-sections of content, the section names are enclosed within the H3 tags</td>
+          <td>.flex-container (class)</td>
+          <td>justify-content: space-around;</td>
         </tr>
         <tr>
-          <td>Helveltica H4</td>
-          <td>To identify sub-sections of content, the section names are enclosed within the H3 tags</td>
+          <td>.card (class)</td>
+          <td>padding: 20px;<br>
+              margin: 5px;</td>
         </tr>
         <tr>
-          <td>Helveltica H5</td>
-          <td>To identify sub-sections of content, the section names are enclosed within the H3 tags</td>
+          <td>img.recipe</td>
+          <td>padding:0px;<br>
+              margin-left: auto;<br>
+              margin-right: auto;</td>
         </tr>
         <tr>
-          <td>Helveltica H6</td>
-          <td>To identify sub-sections of content, the section names are enclosed within the H3 tags</td>
+          <td>.flex-nav</td>
+          <td>padding: 10px;<br>
+              margin: 10px;<br>
+              justify-content: space-around;</td>
         </tr>
         <tr>
-          <td>Helveltica</td>
-          <td>To display page content placed within the body and paragraph tag</td>
+          <td>.topnav a</td>
+          <td>display: block;<br>
+              padding: 14px;</td>
         </tr>
         <tr>
-          <td>Helveltica <xmp><em></xmp></td>
-          <td>To make text italic</td>
+          <td>ul.breadcrumb</td>
+          <td>padding: 1px 15px;<br>
+              margin-top: 0;</td>
         </tr>
         <tr>
-          <td>Helveltica <xmp><strong></xmp></td>
-          <td>To make text bold</td>
+          <td>ul.breadcrumb li+li:before</td>
+          <td>padding: 8px;</td>
         </tr>
         <tr>
-          <td>Helveltica <xmp><small> <em></xmp></td>
-          <td>For figure captions</td>
+          <td>.button</td>
+          <td>padding: 20px;<br>
+              margin-left: auto;<br>
+              margin-right: auto;</td>
         </tr>
-        
+        <tr>
+          <td>.dropdown .dropbtn </td>
+          <td>padding: 14px 16px;<br>
+              margin: 0;</td>
+        </tr>
+        <tr>
+          <td>.dropdown-container a </td>
+          <td>padding: 12px 16px;</td>
+        </tr>
+        <tr>
+          <td>input, select, textarea</td>
+          <td>padding: 10px;<br>
+              margin: 8px;</td>
+        </tr>
+        <tr>
+          <td>label</td>
+          <td>padding: 12px 12px 12px 0;</td>
+        </tr>
+        <tr>
+          <td>table, th, td</td>
+          <td>padding: 5px;
+          </td>
+        </tr>
+        <tr>
+          <td>table, th, td</td>
+          <td>padding: 5px;
+          </td>
+        </tr>
+       
       </table>      
     </section>
     
-      <section class="card">
-      <h3>Typography Codepen</h3>
-      <iframe height="300" style="width: 100%;" scrolling="no" title="Typography-Body Font" src="https://codepen.io/Jan-elle-Chan/embed/preview/mdjQxeB?default-tab=html&theme-id=light" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-        See the Pen <a href="https://codepen.io/Jan-elle-Chan/pen/mdjQxeB">
-        Typography-Body Font</a> by Jan-elle-Chan (<a href="https://codepen.io/Jan-elle-Chan">@Jan-elle-Chan</a>)
-        on <a href="https://codepen.io">CodePen</a>.
-      </iframe>
     
-      
-  </section>
-  <!--End of section Typefaces-->
-
-  <!--Section Whitespace-->
-  <section class="card">
-  
-    <h3>Whitespace</h3>
-    <p>Whitespace, also called negative space consists of spaces, tabs and linebreaks between text, as well as the space between the elements on a page.</p>
-    <p>Whitespace in development files and webpages must both be considered.</p>
-    <h4>Whitespace in HTML files</h4>
-    <ul>
-      <li>Extra spaces between a string will be ignored, use special character sequences or tags to introduce whitespace</li>
-      <li>Use whitespace to indent code for readability
-     </ul>
-    
-    <!--https://www.thoughtco.com/html-space-tag-3466504#:~:text=You%20have%20several%20options%20for%20creating%20and%20controlling,create%20tab%20spaces%20in%20HTML.%20...%20More%20items-->
-      <table title="How to Add Whitespace to HTML document">
-        <caption><strong>How to Add Whitespace to HTML document</strong></caption>
-        <tr>
-          <th>Tag or Character</th>
-          <th>Use</th>
-        </tr>
-        <tr>
-         <td>&lt;br&gt;</td>
-         <td>To move text to next line, like a carriage return</td>
-        </tr>
-        <tr>
-          <td>&lt;p&gt;</td>
-          <td>To create a paragraph break within a block of text</td>
-        <tr>
-            <td> &amp;nbsp; </pre></td>
-            <td>To move text to next line, like a carriage return</td>
-            </tr>
-        <tr>
-            <td>&lt;pre&gt;</td>
-            <td>To display text exactly as it appears bewteen the tags</td>
-        </tr>
-        
-      </table>
-      <iframe height="300" style="width: 100%;" scrolling="no" title="Whitespace Codepen " src="https://codepen.io/Jan-elle-Chan/embed/preview/PoBLogE?default-tab=html&theme-id=light" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-        See the Pen <a href="https://codepen.io/Jan-elle-Chan/pen/PoBLogE">
-        Untitled</a> by Jan-elle-Chan (<a href="https://codepen.io/Jan-elle-Chan">@Jan-elle-Chan</a>)
-        on <a href="https://codepen.io">CodePen</a>.
-      </iframe>
-               
-  </section>
-  <!--End of section Whitespace-->
 
   
   <footer class="card"><img src="images/CC Logo.jpg" alt="Caribbean Chef Logo"/> 
