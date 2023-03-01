@@ -104,7 +104,7 @@ img.recipe{
   text-align: center;
   border: solid 1px #331900;
   margin-left: auto;
-    margin-right: auto;
+  margin-right: auto;
 }
 
 /*----- Styling for navigation -----*/
@@ -601,5 +601,10 @@ footer a{
   h1 {
     
     font-size: 5.0rem;
+}
+
+img.recipe{
+  width:100%;
+  height:auto;
 }
 }
