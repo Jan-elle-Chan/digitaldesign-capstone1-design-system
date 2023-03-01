@@ -1,138 +1,166 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Home</title>
-<link rel="stylesheet" href="webstyle3.css" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
-</head>
-<body>
-<header>
-    <h1>Caribbean Chef</h1>
-</header>
-<!--https://www.w3schools.com/howto/////////////howto_js_responsive_navbar_dropdown.asp#:~:text=How%20TO%20-%20Responsive%20Navbar%20with%20Dropdown%201,hidden%3B%20%7D%20...%203%20Step%203%29%20Add%20JavaScript%3A-->
-<nav class="topnav" id="myTopnav">
-  <a href="webindex.html">Home</a>
-  <a href="webproducts.html">Products</a>
-  <div class="dropdown">
-    <div class="dropbtn">Classes 
-     
-    </div>
-    <div class="dropdown-container">
-      <a href="webclass-one.html">One Day</a>
-      <a href="#">Beginner</a>
-      <a href="#">Advanced</a>
-    </div>
-  </div> 
-  <a href="webrecipes.html">Recipes</a>
-  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-</nav>
-<ul class="breadcrumb">
-  <li><a href="#">Classes</a></li>
-  <li><a href="#">One Day</a></li>
-  <li>Registration</li>
-</ul>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link rel="stylesheet" href="webstyle3.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Courgette&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Caribbean Chef</h1>
+    </header>
+    <!--https://www.w3schools.com/howto/////////////howto_js_responsive_navbar_dropdown.asp#:~:text=How%20TO%20-%20Responsive%20Navbar%20with%20Dropdown%201,hidden%3B%20%7D%20...%203%20Step%203%29%20Add%20JavaScript%3A-->
+    <nav class="topnav" id="myTopnav">
+      <a href="webindex.html">Home</a>
+      <a href="webproducts.html">Products</a>
+      <div class="dropdown">
+        <div class="dropbtn">Classes</div>
+        <div class="dropdown-container">
+          <a href="webclass-one.html">One Day</a>
+          <a href="#">Beginner</a>
+          <a href="#">Advanced</a>
+        </div>
+      </div>
+      <a href="webrecipes.html">Recipes</a>
+      <a
+        href="javascript:void(0);"
+        style="font-size: 15px"
+        class="icon"
+        onclick="myFunction()"
+        >&#9776;</a>
+    </nav>
+    <ul class="breadcrumb">
+      <li><a href="webindex.html">Classes</a></li>
+      <li><a href="webclass-one.html">One Day</a></li>
+      <li>Registration</li>
+    </ul>
 
-<main class="flex-container">
+    <main class="flex-container">
+      <!--https://www.w3schools.com/html/html_form_elements.asp-->
+      <section class="card two-column">
+        <h2 class="center">Register for a One Day Class</h2>
+        <br />
+        <form
+          method="post"
+          action="https://learndigital.dev/DGL103/dgl103-form.php"
+        >
+          <table>
+            <tr>
+              <td>
+                <label for="oneday">Class:</label>
+              </td>
+              <td>
+                <select id="oneday" name="cars">
+                  <option value="curry">Curry</option>
+                  <option value="stew">Stews</option>
+                  <option value="appetizer">Appetizers</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="fname">First name:</label>
+              </td>
+              <td>
+                <input type="text" id="fname" name="fname" placeholder="John" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="lname">Last name:</label>
+              </td>
+              <td>
+                <input type="text" id="lname" name="lname" placeholder="Doe" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="email"
+                  >Email:<span class="label-required">* (required)</span></label
+                >
+              </td>
+              <td>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="johndoe@gmail.com"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="message">Message</label>
+              </td>
+              <td>
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="Please any questions or comments"
+                  style="height: 200px"
+                ></textarea>
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>
+                <input
+                  class="button active2-button"
+                  type="reset"
+                  value="Reset"
+                />
+                <input
+                  class="button active1-button"
+                  type="submit"
+                  value="Submit"
+                />
+              </td>
+            </tr>
+          </table>
+        </form>
+      </section>
+    </main>
+    <footer class="card">
+      <img src="images/CC Logo.jpg" alt="Caribbean Chef Logo" />
+      <a href="support.html">Support</a>
+      <a href="website.html">Website</a>
+    </footer>
 
-<!--https://www.w3schools.com/html/html_form_elements.asp-->
-<section class="card two-column">
-  <h2 class="center"> Register for a One Day Class</h2><br>
-  <form method="post" 
-    action="https://learndigital.dev/DGL103/dgl103-form.php">
-    <table>
-    <tr>
-      <td>
-        <label for="oneday">Class:</label>
-      </td>
-      <td>
-        <select id="oneday" name="cars">
-          <option value="curry">Curry</option>
-          <option value="stew">Stews</option>
-          <option value="appetizer">Appetizers</option>
-        </select>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <label for="fname">First name:</label>
-      </td>
-      <td>
-        <input type="text" id="fname" name="fname" placeholder="John">
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <label for="lname">Last name:</label>
-    </td>
-    <td>
-      <input type="text" id="lname" name="lname" placeholder="Doe">
-    </td>
-    </tr>
-    <tr>
-      <td>
-        <label for="email">Email:<span class="label-required">* (required)</span></label>
-      </td>
-      <td>
-        <input type="email" id="email" name="email" placeholder="johndoe@gmail.com">
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <label for="message">Message</label>
-      </td>
-      <td>
-        <textarea id="message" name="message" placeholder="Please any questions or comments" style="height:200px"></textarea>
-      </td>
-    </tr>
-    <tr>
-      <td></td>
-      <td>
-        <input class= "button active2-button" type="reset" value="Reset">
-        <input class= "button active1-button" type="submit" value="Submit">
-      </td>
-    </tr>
-  </table>
-</form>
-    
-    
-</section>
-</main>
-<footer class="card"><img src="images/CC Logo.jpg" alt="Caribbean Chef Logo"/> 
-  <a href="support.html">Support</a>
-  <a href="website.html">Website</a>
-  
-</footer>
-
-<script>
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-}
-
-var dropdown = document.getElementsByClassName("dropbtn");
-  var i;
-  
-  for (i = 0; i < dropdown.length; i++) {
-    dropdown[i].addEventListener("click", function() {
-      this.classList.toggle("active");
-      var dropdownContent = this.nextElementSibling;
-      if (dropdownContent.style.display === "block") {
-        dropdownContent.style.display = "none";
-      } else {
-        dropdownContent.style.display = "block";
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
       }
-    });
-  }
-</script>
 
-</body>
+      var dropdown = document.getElementsByClassName("dropbtn");
+      var i;
+
+      for (i = 0; i < dropdown.length; i++) {
+        dropdown[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var dropdownContent = this.nextElementSibling;
+          if (dropdownContent.style.display === "block") {
+            dropdownContent.style.display = "none";
+          } else {
+            dropdownContent.style.display = "block";
+          }
+        });
+      }
+    </script>
+  </body>
 </html>
