@@ -52,10 +52,10 @@ h2, h3, h4, h5, h6{
     text-decoration: none;
     background-color: #ffffd5;
     cursor: pointer;
-  border:none;
-  background: none;
-  text-align: left;
-  font-size: 1.5rem; /* Codepen change */
+    border:none;
+    background: none;
+    text-align: left;
+    font-size: 1.5rem; /* Codepen change */
   }
 
   .dropdown-container {
