@@ -36,7 +36,7 @@ h2, h3, h4, h5, h6{
 .sidebar {
     margin: 0;
     padding: 0;
-    width: 20%;
+    width: 15%;
     background-color: #ffffed;
     position: fixed;
     height: 100%;
@@ -96,7 +96,7 @@ h2, h3, h4, h5, h6{
   
   /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
   .content {
-    margin-left: 20vh;
+    margin-left: 20%;
     margin-bottom: 0;
     padding: 2vh;
     
