@@ -29,9 +29,20 @@ h1 {
 
 h2, h3, h4, h5, h6{
   text-align: left;
-  color: #000;
+ 
   font-family: "Helveltica", sans-serif;
 }
+
+h2, h3{
+color: #000;
+}
+
+h4, h5, h6{
+  color: #355FB9;
+
+}
+
+
 
 .sidebar {
     margin: 0;
@@ -152,7 +163,7 @@ h2, h3, h4, h5, h6{
   }
 
   .card2{
-    background-color: rgb(53, 95, 185);
+    background-color: #355FB9;
     border-radius: 5px;
     padding: 20px;
     margin: 5px;
