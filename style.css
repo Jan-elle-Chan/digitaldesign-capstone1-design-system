@@ -133,6 +133,10 @@ h2, h3, h4, h5, h6{
    align-self: center;
   }
 
+  .three-column{
+    width:33%;
+ }
+
   .img-medium{
     width: 50%;
     height: auto;
@@ -218,14 +222,7 @@ h2, h3, h4, h5, h6{
     padding: 8px;
   }
 
-  footer {
-    height: 10vh;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-  }
+  
 
  /*----- Form styling -----*/
  
@@ -254,21 +251,38 @@ input[type="reset"]:hover
   border:solid 2px;
 }
 /*----- End of form styling -----*/
+  footer {
+    height: 10vh;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: left;
+  }
 
   footer img {
     float: left;
     overflow: auto;
     margin: 0;
     padding: 20;
-    height: 75px;
+    height: 90px;
     width: auto;
   }
+
   footer a{
     color: black;
-    text-decoration: none;
-    display: inline-block;
-    padding:15px;
+    text-decoration: underline;
+    display: block;
+    padding:0px;
+    text-align: left;
     
+  }
+
+  footer a:hover,
+  .sidebar a:hover:not(.active) {
+    color: #000;
+    font-weight: bold; /* Codepen change */
+    background-color: #FFFFFF;
   }
   
   /*Colours*/
