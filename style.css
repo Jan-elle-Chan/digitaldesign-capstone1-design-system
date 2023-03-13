@@ -279,7 +279,7 @@ input[type="reset"]:hover
     display: block;
     padding:0px;
     text-align: left;
-    
+    cursor: pointer;
   }
 
   footer a:hover,
@@ -287,6 +287,11 @@ input[type="reset"]:hover
     color: #000;
     font-weight: bold; /* Codepen change */
     background-color: #FFFFFF;
+  }
+
+  .span-padding{
+    
+    padding-right: 15px;
   }
   
   /*Colours*/
