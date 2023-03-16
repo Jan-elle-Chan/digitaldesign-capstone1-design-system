@@ -177,16 +177,15 @@ h4, h5, h6{
   /*----- Styling for buttons -----*/
   .button {
     display: inline-block;
-    padding: 20px;
-    width: 150px;
-    font-size:18px; 
-    border-radius:50px;
+    padding: 14px;
+    width: 110px;
+    font-size:14px; 
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left:auto;
     cursor:pointer;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border:none;
   }
-  
   
   .button a{
     text-decoration: none;
@@ -194,28 +193,27 @@ h4, h5, h6{
   
   .active1-button{
     background-color: #FF8000;
-    border: 1px solid #331900;
+    /*border: 1px solid #331900;*/
+    
   }
   
   .active2-button{
     background-color: #FFCC99;
-    border: 1px solid #331900;
+    /*border: 1px solid #331900;*/
   }
   
   
   .inactive-button{
     background-color: #F0DECB;
-    border:1px solid #808080;
+    /*border:1px solid #808080;*/
     color:#808080;
   }
-  
   
   .active1-button:hover,
   .active2-button:hover{
     font-weight: bold;
-    border: solid 2px #331900;
+    /*border: solid 2px #331900;*/
   }
-
   table {
     border-collapse: collapse;
     border: 1px solid black;
@@ -241,7 +239,6 @@ h4, h5, h6{
  /*----- Form styling -----*/
  
 input, select, textarea{
-  border-radius: 5px;
   padding:10px;
   margin:5px;
   border: 1px solid #331900;
@@ -262,7 +259,7 @@ input[type="submit"]:hover,
 input[type="reset"]:hover
 {
   font-weight:bold;
-  border:solid 2px;
+  border:none;
 }
 /*----- End of form styling -----*/
   footer {
