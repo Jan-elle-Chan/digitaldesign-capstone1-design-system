@@ -472,12 +472,11 @@ th:nth-child(even),td:nth-child(even) {
   visibility: hidden;
   position: absolute;
   z-index: 1;
-  width: 100px;
-  color: white;
-  font-size: 12px;
+  width: 150px;
+  color: #000000;
+  font-size: 11px;
   font-family: Helveltica, sans-serif;
-  background-color: black;
-  border-radius: 10px;
+  background-color: #FFCC99;
   padding: 10px 10px 10px 10px;
 }
 
