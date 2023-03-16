@@ -63,7 +63,6 @@ html{
   
   .card {
     background-color: #FFFFFF;
-    border-radius: 10px;
     padding: 20px;
     margin: 5px;
     width:100%;
@@ -71,7 +70,7 @@ html{
     position: relative;
     overflow: auto;
     align-self: center;
-   
+    box-shadow: 0px 5px 10px 0px rgba(65, 65, 65, 0.2);
   }
 
   .center{
@@ -79,11 +78,11 @@ html{
 
   }
   .two-column{
-    width:50%;
+    width:48%;
   }
 
   .three-column{
-     width:33%;
+     width:31%;
   }
 /*------ Styling for images -----*/
 figure a{
