@@ -98,7 +98,6 @@ h4, h5, h6{
   
   /* Links on mouse-over */
   .dropdown-btn:hover,
-  footer a:hover,
   .sidebar a:hover:not(.active) {
     background-color: #FFCC99;
     color: #000;
@@ -293,8 +292,7 @@ input[type="reset"]:hover
     cursor: pointer;
   }
 
-  footer a:hover,
-  .sidebar a:hover:not(.active) {
+  footer a:hover {
     color: #000;
     font-weight: bold; /* Codepen change */
     background-color: #FFFFFF;
