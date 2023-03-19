@@ -376,8 +376,8 @@ input[type="reset"]:hover
  /* ----- carousel control buttons stylings ----- */
  .slide-btn {
   background-color: #FFCC99;
-  border-radius: 50%;
-  border: .2rem solid #331900;
+  border-radius: 0%;
+  border: none;
   width: 1.2rem;
   height: 1.2rem;
   outline: none;
@@ -385,10 +385,15 @@ input[type="reset"]:hover
   /* stylings for positioning the buttons at
      the bottom of the carousel */
   position: absolute;
-  bottom: 3%;
+  bottom: 1%;
   left: 50%;
   transform: translateX(-50%);
   z-index: 70;
+}
+
+.slide-btn-active{
+  background-color: #FFCC99;
+
 }
 /* As we provide position as absolute, 
 the buttons places one over the other. 
@@ -412,9 +417,10 @@ to which the button is associated. */
 .slide-btn-1:focus~.slideshow-wrapper {
   animation: none;
   left: 0;
+ 
 }
 .slide-btn-2:focus~.slideshow-wrapper {
-  animation: none;
+  animation:none;
   left: -100%;
 }
 .slide-btn-3:focus~.slideshow-wrapper {
@@ -425,6 +431,7 @@ to which the button is associated. */
   animation: none;
   left: -300%;
 }
+
 /* when we focus on the button, the background color changes */
 .slide-btn:focus {
   background-color: #FF8000;
