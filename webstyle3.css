@@ -443,6 +443,7 @@ to which the button is associated. */
 /*https://www.w3schools.com/html/html_table_styling.asp*/
 
 /*----carousel styling-----*/
+/*----carousel code source--https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow----*/
 /* Slideshow container */
 .slideshow-container {
   max-width: 1000px;
@@ -451,14 +452,29 @@ to which the button is associated. */
 }
 
 /* Next & previous buttons */
-.prev, .next {
+/*.prev, .next {
   cursor: pointer;
   position: absolute;
   top: 50%;
   width: auto;
   padding: 16px;
   margin-top: -22px;
-  color: white;
+  color: #000000;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+*/
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: #000000;
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
@@ -472,30 +488,12 @@ to which the button is associated. */
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
+/* On hover, add a black background color with a little bit see-through 
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
 }
+*/
 
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
 
 /* The dots/bullets/indicators */
 .dot {
@@ -503,20 +501,20 @@ to which the button is associated. */
   height: 15px;
   width: 15px;
   margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
+  background-color: #FFCC99;
+  /*border-radius: 50%;*/
   display: inline-block;
   transition: background-color 0.6s ease;
 }
 
 .active, .dot:hover {
-  background-color: #717171;
+  background-color: #FF8000;
 }
 
 /* Fading animation */
 .fade {
   animation-name: fade;
-  animation-duration: 1.5s;
+  animation-duration: 1.0s;
 }
 
 @keyframes fade {
@@ -524,7 +522,7 @@ to which the button is associated. */
   to {opacity: 1}
 }
 
-
+/*end of carousel styling*/
 
 
 table, th, td {
