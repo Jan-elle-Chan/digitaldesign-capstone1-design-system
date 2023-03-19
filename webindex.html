@@ -46,41 +46,40 @@
 </section>
 
 <section class="card two-column">
-<!--https://www.geeksforgeeks.org/how-to-make-a-carousel-using-css/-->
-  <div class="slideshow">
-    <!-- carousel control buttons -->
-    <button class="slide-btn slide-btn-1"></button>
-    <button class="slide-btn slide-btn-2"></button>
-    <button class="slide-btn slide-btn-3"></button>
-    <button class="slide-btn slide-btn-4"></button>
-    <!-- carousel wrapper which contains all images -->
-    <div class="slideshow-wrapper">
-      <div class="slide">
-        <figure>
-          <img class="slide-img" src="images/Pie1.jpg">
-          <figcaption><em><small>Aloo pie</small></em></figcaption>
-        </figure>
-      </div>
-      <div class="slide">
-        <figure>
-          <img class="slide-img" src="images/Roti.jpg">
-          <figcaption><em><small>Paratha, curried chicken and potato with mango</small></em></figcaption>
-        </figure>
-      </div>
-      <div class="slide">
-        <figure>
-          <img class="slide-img" src="images/RiceBeans1.jpg">
-          <figcaption><em><small>Redbeans, rice, callaloo, macaroni pie and stewed chicken</small></em></figcaption>
-        </figure>
-      </div>
-      <div class="slide">
-        <figure>
-          <img class="slide-img" src="images/Phulourie1.jpg">
-          <figcaption><em><small>Phulourie with chicken</small></em></figcaption>
-        </figure>
-      </div>
-    </div>
+
+<!--new carousel-->
+<div class="slideshow-container">
+
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="img_nature_wide.jpg" style="width:100%">
+    <div class="text">Caption Text</div>
   </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="img_snow_wide.jpg" style="width:100%">
+    <div class="text">Caption Two</div>
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="images/Pie1.jpg" style="width:100%">
+    <div class="text">Caption Three</div>
+  </div>
+  
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+  
+  </div>
+  <br>
+  
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span> 
+    <span class="dot" onclick="currentSlide(2)"></span> 
+    <span class="dot" onclick="currentSlide(3)"></span> 
+  </div>
+  
 </section>
 </main>
 
@@ -115,6 +114,33 @@ var dropdown = document.getElementsByClassName("dropbtn");
       }
     });
   }
+
+  let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
 </script>
 
 </body>
