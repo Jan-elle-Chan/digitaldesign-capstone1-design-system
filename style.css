@@ -137,10 +137,9 @@ h4, h5, h6{
   .card-img{
     width: 100%;
     height:auto;
-    border-radius: 15px;
+    border: none;
     padding:0px;
-    border: 1px solid #331900;
-   align-self: center;
+    align-self: center;
   }
 
   .two-column{
