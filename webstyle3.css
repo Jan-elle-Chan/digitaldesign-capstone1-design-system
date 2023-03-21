@@ -179,9 +179,9 @@ ul.breadcrumb li a:hover {
   cursor:pointer;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   border:none;
-  position: absolute;
+  /*position: absolute;
   top:50%;
-  right: 0;
+  right: 0;*/
 }
 .btn-left{
   text-align: left;
@@ -303,7 +303,6 @@ input[type="submit"]:hover,
 input[type="reset"]:hover
 {
   font-weight:bold;
-  border:solid 2px;
 }
 /*----- End of form styling -----*
 
