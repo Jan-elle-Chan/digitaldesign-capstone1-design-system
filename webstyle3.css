@@ -437,7 +437,7 @@ input[type="reset"]:hover
 table, th, td {
   border: none;
   border-collapse: collapse;
-  padding-left: 5px, 5px, 5px, 15px;
+  padding: 5px;
   margin-left: 14px;;
  }
 
@@ -539,8 +539,8 @@ footer {
     float: left;
     overflow: auto;
     margin: 0;
-    padding: 20;
-    height: 90px;
+    padding: 20px;
+    height: 125px;
     width: auto;
   }
 
@@ -592,7 +592,6 @@ footer {
   .topnav.responsive .dropdown .dropbtn {
     display: block;
     width: 100%;
-    align-self:middle;
     text-align: center;
   }
   .flex-container{
