@@ -56,6 +56,7 @@
           method="post"
           action="https://learndigital.dev/DGL103/dgl103-form.php"
           autocomplete="on"
+          onsubmit="return check()" novalidate
         >
           <table>
             <tr>
@@ -75,7 +76,8 @@
                 <label for="fname">First name:</label>
               </td>
               <td>
-                <input type="text" id="fname" name="fname" placeholder="John" />
+                <input type="text" id="fname" name="fname" placeholder="John" required minlength="2" />
+                <div id="errfirst" class="emsg"></div>
               </td>
             </tr>
             <tr>
@@ -83,7 +85,8 @@
                 <label for="lname">Last name:</label>
               </td>
               <td>
-                <input type="text" id="lname" name="lname" placeholder="Doe" />
+                <input type="text" id="lname" name="lname" placeholder="Doe" required minlength="2" />
+                <div id="errlast" class="emsg"></div>
               </td>
             </tr>
             <tr>
@@ -139,6 +142,35 @@
     </footer>
 
     <script>
+      function check () {
+   
+  
+   // firstname
+   field = document.getElementById("fname");
+   error = document.getElementById("errfirst");
+   if (!field.checkValidity()) {
+     valid = false;
+     field.classList.add("err");
+     error.innerHTML = "Name must be 2-4 characters\r\n";
+   } else {
+     field.classList.remove("err");
+     error.innerHTML = "";
+   }
+ 
+   // last name
+   field = document.getElementById("lname");
+   error = document.getElementById("errlast");
+   if (!field.checkValidity()) {
+     valid = false;
+     field.classList.add("err");
+     error.innerHTML = "Name must be 2-4 characters\r\n";
+   } else {
+     field.classList.remove("err");
+     error.innerHTML = "";
+   }
+ 
+   
+ }
       function myFunction() {
         var x = document.getElementById("myTopnav");
         if (x.className === "topnav") {

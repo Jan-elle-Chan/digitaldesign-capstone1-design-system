@@ -334,7 +334,8 @@ label {
  font-style:italic;
 }
 
-
+.err { background: #F0DECB;border: 1px solid #331900; }
+.emsg { color: #FF4000; font-size: small; }
 
 
 
