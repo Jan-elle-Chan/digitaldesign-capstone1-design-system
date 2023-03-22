@@ -314,6 +314,16 @@ input, select, textarea{
   border: 1px solid #331900;
   width:70%
 }
+
+/*https://www.w3schools.com/CSSref/sel_focus.php*/
+input:focus {
+  border: 3px solid #331900;
+}
+
+select:focus{
+  border: 3px solid #331900;
+}
+
 label {
   padding: 12px 12px 12px 0;
   display: inline-block;
