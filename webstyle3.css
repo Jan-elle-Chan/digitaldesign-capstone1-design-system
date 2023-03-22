@@ -332,6 +332,8 @@ label {
  color: #FF4000;
  font-weight:bold;
  font-style:italic;
+ font-size: small;
+ width: 40px;
 }
 
 .err { background: #F0DECB;border: 1px solid #331900; }
