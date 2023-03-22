@@ -167,6 +167,14 @@ h4, h5, h6{
     align-self: center;
   }
 
+  .body-two-column{
+    width:48%;
+  }
+
+  .body-three-column{
+     width:31%;
+  }
+  
   .two-column{
     width:50%;
   }

@@ -89,6 +89,12 @@ html{
     justify-content: space-around;
   }
 
+  .flex-footer{
+      display: flex;
+      flex-direction: row;
+    
+  }
+
   
   .card {
     background-color: #FFFFFF;
@@ -106,13 +112,21 @@ html{
     margin: auto 0;
 
   }
-  .two-column{
+  .body-two-column{
     width:48%;
   }
 
-  .three-column{
+  .body-three-column{
      width:31%;
   }
+
+  .two-column{
+    width:50%;
+  }
+
+  .three-column{
+    width:33%;
+ }
 /*------ Styling for images -----*/
 figure a{
   text-decoration: none;
@@ -333,7 +347,6 @@ label {
  font-weight:bold;
  font-style:italic;
  font-size: small;
- width: 40px;
 }
 
 .err { background: #F0DECB;border: 1px solid #331900; }
@@ -514,31 +527,43 @@ th:nth-child(even),td:nth-child(even) {
 
 /*-----footer styles-----*/
 footer {
-  height: 10%;
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  text-align: center;
-}
+    height: 10vh;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: left;
+  }
 
+  footer img {
+    float: left;
+    overflow: auto;
+    margin: 0;
+    padding: 20;
+    height: 90px;
+    width: auto;
+  }
 
-footer img {
-  float: left;
-  overflow: auto;
-  margin: 0;
-  padding: 20;
-  height: 75px;
-  width: auto;
-}
-footer a{
-  color: black;
-  text-decoration: none;
-  display: inline-block;
-  padding:15px;
+  footer a{
+    color: black;
+    text-decoration: underline;
+    display: block;
+    padding:0px;
+    text-align: left;
+    cursor: pointer;
+  }
+
+  footer a:hover {
+    color: #000;
+    font-weight: bold; /* Codepen change */
+    background-color: #FFFFFF;
+  }
+
+  .span-padding{
+    
+    padding-right: 15px;
+  }
   
-}
-
 /*styles for responsiveness*/
 @media screen and (max-width: 600px) {
   .topnav a:not(:first-child), .dropdown .dropbtn {
