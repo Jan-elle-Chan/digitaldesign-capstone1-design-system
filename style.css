@@ -26,7 +26,32 @@ h1 {
   font-family: 'Courgette', cursive
 }
 
+.skip {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  border:none;
+  height:0px;
+  width:0px;
+  padding:5px;
+  background-color:#ffffed;
+  color:#000000;
+  overflow: hidden;
+}
 
+.skip:focus {
+  position: static;
+  width: auto;
+  height: auto;
+}
+
+.skip:hover {
+  position: static;
+  width: auto;
+  height: auto;
+  font-weight: bold;
+  color: #000000;
+}
 h2, h3, h4, h5, h6{
   text-align: left;
  
