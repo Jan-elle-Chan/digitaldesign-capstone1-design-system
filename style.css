@@ -132,6 +132,7 @@ h4, h5, h6{
   /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
   .content {
     margin-left: 25%;
+    margin-top: 0;
     margin-bottom: 0;
     padding: 2vh;
     
@@ -408,4 +409,12 @@ input[type="reset"]:hover
       float: none;
       padding: 2px;
     }
+
+    .content {
+      margin-left: 0%;
+    }
+    .three-column{
+      width:100%;
+      text-align: center;
+   }
   }
