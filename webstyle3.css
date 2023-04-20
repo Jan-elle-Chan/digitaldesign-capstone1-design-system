@@ -441,7 +441,8 @@ table, th, td {
   border: none;
   border-collapse: collapse;
   padding: 5px;
-  margin-left: 14px;;
+  margin-left: 14px;
+  text-align: left;
  }
 
 table {
@@ -451,14 +452,6 @@ table {
  }
 
 
-
-th:nth-child(odd),td:nth-child(odd) {
-  text-align:left;
-  }
-
-th:nth-child(even),td:nth-child(even) {
-  text-align:left;
-  }
 
 /* ----- end of recipe table stylings ----- */
 
